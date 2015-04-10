@@ -19,34 +19,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0778D8551AD87F7100809422 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0778D84F1AD87F7000809422 /* MAObjCRuntime.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8DD76FA10486AA7600D96B5E;
-			remoteInfo = MAObjCRuntime;
-		};
-		0778D8571AD87F7100809422 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0778D84F1AD87F7000809422 /* MAObjCRuntime.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 22A07AE215241A3B008A2A36;
-			remoteInfo = MAObjCRuntime_iOS;
-		};
-		0778D8591AD87F7100809422 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0778D84F1AD87F7000809422 /* MAObjCRuntime.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 22A07AF115241A3B008A2A36;
-			remoteInfo = MAObjCRuntime_iOSTests;
-		};
-		0778D85B1AD87F8600809422 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0778D84F1AD87F7000809422 /* MAObjCRuntime.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8DD76F960486AA7600D96B5E;
-			remoteInfo = MAObjCRuntime;
-		};
 		0778D8801AD8826D00809422 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0778D83C1AD87CC100809422 /* Project object */;
@@ -71,7 +43,6 @@
 /* Begin PBXFileReference section */
 		0778D8441AD87CC100809422 /* ObjC-Stub */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ObjC-Stub"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0778D8471AD87CC100809422 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0778D84F1AD87F7000809422 /* MAObjCRuntime.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MAObjCRuntime.xcodeproj; path = ../submodules/MAObjCRuntime/xcode/MAObjCRuntime.xcodeproj; sourceTree = "<group>"; };
 		0778D8641AD8826D00809422 /* ObjC-Stub iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ObjC-Stub iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0778D8671AD8826D00809422 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0778D8681AD8826D00809422 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -117,7 +88,6 @@
 		0778D83B1AD87CC100809422 = {
 			isa = PBXGroup;
 			children = (
-				0778D84F1AD87F7000809422 /* MAObjCRuntime.xcodeproj */,
 				0778D8461AD87CC100809422 /* ObjC-Stub */,
 				0778D8651AD8826D00809422 /* ObjC-Stub iOS */,
 				0778D8821AD8826D00809422 /* ObjC-Stub iOSTests */,
@@ -150,16 +120,6 @@
 			children = (
 			);
 			name = Classes;
-			sourceTree = "<group>";
-		};
-		0778D8501AD87F7000809422 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0778D8561AD87F7100809422 /* MAObjCRuntime */,
-				0778D8581AD87F7100809422 /* libMAObjCRuntime_iOS.a */,
-				0778D85A1AD87F7100809422 /* MAObjCRuntime_iOSTests.octest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		0778D85D1AD881F800809422 /* Frameworks */ = {
@@ -223,7 +183,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				0778D85C1AD87F8600809422 /* PBXTargetDependency */,
 			);
 			name = "ObjC-Stub";
 			productName = "ObjC-Stub";
@@ -297,12 +256,6 @@
 			mainGroup = 0778D83B1AD87CC100809422;
 			productRefGroup = 0778D8451AD87CC100809422 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 0778D8501AD87F7000809422 /* Products */;
-					ProjectRef = 0778D84F1AD87F7000809422 /* MAObjCRuntime.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				0778D8431AD87CC100809422 /* ObjC-Stub */,
@@ -311,30 +264,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		0778D8561AD87F7100809422 /* MAObjCRuntime */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = MAObjCRuntime;
-			remoteRef = 0778D8551AD87F7100809422 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		0778D8581AD87F7100809422 /* libMAObjCRuntime_iOS.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libMAObjCRuntime_iOS.a;
-			remoteRef = 0778D8571AD87F7100809422 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		0778D85A1AD87F7100809422 /* MAObjCRuntime_iOSTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = MAObjCRuntime_iOSTests.octest;
-			remoteRef = 0778D8591AD87F7100809422 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0778D8621AD8826D00809422 /* Resources */ = {
@@ -384,11 +313,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0778D85C1AD87F8600809422 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MAObjCRuntime;
-			targetProxy = 0778D85B1AD87F8600809422 /* PBXContainerItemProxy */;
-		};
 		0778D8811AD8826D00809422 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0778D8631AD8826D00809422 /* ObjC-Stub iOS */;
@@ -499,7 +423,6 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(PROJECT_DIR)/../submodules/MAObjCRuntime/",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -511,7 +434,6 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(PROJECT_DIR)/../submodules/MAObjCRuntime/",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -530,7 +452,6 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(PROJECT_DIR)/../submodules/MAObjCRuntime/",
 				);
 				INFOPLIST_FILE = "ObjC-Stub iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
@@ -549,7 +470,6 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(PROJECT_DIR)/../submodules/MAObjCRuntime/",
 				);
 				INFOPLIST_FILE = "ObjC-Stub iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
@@ -629,6 +549,7 @@
 				0778D8891AD8826D00809422 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0778D88A1AD8826D00809422 /* Build configuration list for PBXNativeTarget "ObjC-Stub iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -637,6 +558,7 @@
 				0778D88C1AD8826D00809422 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

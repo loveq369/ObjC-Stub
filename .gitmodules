@@ -1,3 +1,0 @@
-[submodule "submodules/MAObjCRuntime"]
-	path = submodules/MAObjCRuntime
-	url = https://github.com/mikeash/MAObjCRuntime.git

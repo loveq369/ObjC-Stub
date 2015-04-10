@@ -3,11 +3,15 @@
  */
 
 #import <Foundation/Foundation.h>
+
 #import "MARTNSObject.h"
+#import "RTMethod.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        NSLog(@"Hello world");
+        for (RTMethod *method in [NSObject rt_methods]) {
+            NSLog(@"method (%@)", [method selectorName]);
+        }
     }
     return 0;
 }
