@@ -1,2 +1,7 @@
+platform :ios, '7.0'
+
+workspace 'ObjC-Stub'
+
+xcodeproj 'ObjC-Stub.xcodeproj'
 
 pod 'MAObjCRuntime', '~> 0.0'
