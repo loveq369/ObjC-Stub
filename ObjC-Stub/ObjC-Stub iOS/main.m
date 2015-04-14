@@ -15,7 +15,7 @@
 int main(int argc, char * argv[]) {
     @autoreleasepool {
         for (RTMethod *method in [NSObject rt_methods]) {
-            NSLog(@"method (%@)", [method selectorName]);
+            NSLog(@"method (%@)", [method selectorName]);   
         }
     }
 }
