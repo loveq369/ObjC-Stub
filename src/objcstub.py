@@ -20,10 +20,86 @@ import re
 import shutil
 import sys
 
+class Interface(object):
+    def __init__(self, name):
+        self.name = name
+        self.methods = []
+
+    """ Remove all whitespace and macros from method. """
+    def cleanMethod(self, method):
+        # Remove the semi-colon and everything after it (comments, etc.)
+        # Strip all whitespace again.
+        # @note macros have already been removed.
+        return method
+
+    def addMethod(self, method):
+        self.methods.append(self.cleanMethod(method))
+
+    def createImplementation(self, dst):
+        pass
+
+    def __str__(self):
+        return "%s: %s method(s)" % (self.name, len(self.methods))
+
+def cleanLine(line):
+    # Remove macros
+    while True:
+        m = re.search(r"\w+\((.+?(?=\)))\)", line)
+        if not m: break
+        line = line.replace(m.group(0), "")
+    # Strip all excess white space.
+    return " ".join(line.split())
+
 def parseHeader(header, exportDir, overwrite):
     # when parsing interfaces, always strip the method names of extra whitespace. This will make it
     # much easier to compare methods that already exist.
-    pass
+    print "HEADER", header
+    interface = False
+    methodName = False
+    implementationFile = os.path.join(exportDir, os.path.basename(header) + ".m")
+    interfaces = []
+    with open(header, "r") as f:
+        num = 0
+        for line in f:
+            num = num + 1
+            line = cleanLine(line)
+            if methodName:
+                # Continue appending to the method name until the entire defintion
+                # has been added.
+                methodName = methodName + " " + line
+                if ";" in line:
+                    interface.addMethod(methodName)
+                    methodName = False
+            elif "@interface" in line:
+                print "LINE", line
+                # Category.
+                if "(" in line:
+                    iface = line.strip("@interface ")
+                else:
+                    iface = line.split(":")[0].split(" ")[1]
+                # @interface ClassName : NSObject { -- this extracts 'ClassName'
+                print iface
+                interface = Interface(iface)
+                """
+                if "@end" in line: # Might happen...
+                    interfaces.append(interface)
+                    interface = False
+                """
+                continue
+            elif interface and (line.startswith("-") or line.startswith("+")):
+                if ";" in line:
+                    print "no methodName", interface.name, line
+                    interface.addMethod(line)
+                else: # Continue to concatenate method until complete.
+                    print "methodName:", line
+                    methodName = line
+            elif interface and "@end" in line:
+                # Create the implementation file
+                print str(interface)
+                interfaces.append(interface)
+                interface = False
+    # Create implementation file.
+    #print str(interfaces)
 
 def main(headerPath, exportDir, overwrite):
     headerDir = os.path.dirname(headerPath)
