@@ -17,17 +17,20 @@ Notes:
 
 import os
 import re
+import shutil
 import sys
 
-def parseHeader(header, overwrite):
+def parseHeader(header, exportDir, overwrite):
+    # when parsing interfaces, always strip the method names of extra whitespace. This will make it
+    # much easier to compare methods that already exist.
     pass
 
-def main(header, overwrite):
-    headerDir = os.path.dirname(header)
+def main(headerPath, exportDir, overwrite):
+    headerDir = os.path.dirname(headerPath)
     # Any import that is part of a framework is automatically searched within the respective folder.
     # For example, if we find <UIKit/UIFont.h>, 'UIFont.h' will attempt to be found within the base
     # directory.
-    with open(header, "r") as f:
+    with open(headerPath, "r") as f:
         num = 0
         for line in f:
             num = num + 1
@@ -40,13 +43,14 @@ def main(header, overwrite):
                 name = m.group(0)
                 # Extract the header file name only.
                 name = name.strip("<").strip(">").split("/")[-1]
-                path = os.path.join(headerDir, name)
-                if not os.path.exists(path):
+                srcPath = os.path.join(headerDir, name)
+                if not os.path.exists(srcPath):
                     #print("Header file ignored:", path)
                     continue
-                # Do not recursively look in other header files. Just parse them.
-                #parseHeader(path, overwrite)
-                print "Header", path
+                # Copy header file.
+                dstPath = os.path.join(exportDir, name)
+                shutil.copyfile(srcPath, dstPath)
+                parseHeader(srcPath, exportDir, overwrite)
 
 if __name__ == "__main__":
     import argparse
@@ -65,5 +69,11 @@ if __name__ == "__main__":
     if not os.path.exists(args.header):
         print "Header file does not exist at:", args.header
         sys.exit(1)
-    main(args.header, args.overwrite_implementation)
+    exportDir = os.path.join(os.path.dirname(os.path.realpath(__file__)), "export")
+    if os.path.isfile(exportDir):
+        print "Export path must be a directory. Given a file at:", exportDir
+        sys.exit(1)
+    if not os.path.isdir(exportDir):
+        os.makedirs(exportDir)
+    main(args.header, exportDir, args.overwrite_implementation)
     sys.exit(0)
