@@ -27,11 +27,12 @@ class Interface(object):
 
     """ Remove all whitespace and macros from method. """
     def cleanMethod(self, method):
+        # Remove macros.
+        method = cleanLine(method)
         # Remove the semi-colon and everything after it (comments, etc.)
         method = method.split(";")[0]
         # Strip all whitespace again.
         method = " ".join(method.split())
-        # @note Macros should have already been removed at this point.
         return method
 
     def addMethod(self, method):
@@ -40,11 +41,14 @@ class Interface(object):
     def getImplementation(self):
         s = "\n@implementation " + self.name + "\n\n"
         for method in self.methods:
+            isStatic = "+" in method
             # Get the first brackets.
             m = re.search(r"\((.+?(?=\)))\)", method)
             val = m.groups(0)[0]
-            if "*" in val or "instancetype" in val:
+            if "*" in val:
                 ret = "    return nil;\n"
+            elif "instancetype" in val:
+                ret = isStatic and "    return [[self alloc] init];\n" or "    return [super init];\n"
             elif "void" in val:
                 ret = "    \n"
             else:
@@ -57,7 +61,7 @@ class Interface(object):
         return s
 
     def __str__(self):
-        return "%s: %s method(s)" % (self.name, len(self.methods))
+        return "{}: {} method(s)".format(self.name, len(self.methods))
 
 def cleanLine(line):
     # Remove macros
@@ -79,11 +83,11 @@ def parseHeader(header, exportDir, overwrite):
     methodName = False
     implementationFile = os.path.join(exportDir, os.path.basename(header.rstrip(".h")) + ".m")
     interfaces = []
+    lines = []
     with open(header, "r") as f:
         num = 0
         for line in f:
             num = num + 1
-            line = cleanLine(line)
             if methodName:
                 # Continue appending to the method name until the entire defintion
                 # has been added.
@@ -91,17 +95,19 @@ def parseHeader(header, exportDir, overwrite):
                 if ";" in line:
                     interface.addMethod(methodName)
                     methodName = False
+            elif "#import" in line:
+                # @hack Replace UIKit with FakeUIKit until this becomes a CLI option.
+                line = line.replace("<UIKit/", "<FakeUIKit/")
             elif "@interface" in line:
                 #print "LINE", line
+                iface = cleanLine(line)
                 # Category.
-                if "(" in line:
-                    iface = line.strip("@interface ")
-                else:
-                    iface = line.split(":")[0].split(" ")[1]
+                if "(" in iface:
+                    iface = iface.strip("@interface ")
+                else: # Normal interface
+                    iface = iface.split(":")[0].split(" ")[1]
                 # @interface ClassName : NSObject { -- this extracts 'ClassName'
-                #print iface
                 interface = Interface(iface)
-                continue
             elif interface and (line.startswith("-") or line.startswith("+")):
                 if ";" in line:
                     #print "no methodName", interface.name, line
@@ -112,10 +118,16 @@ def parseHeader(header, exportDir, overwrite):
             elif interface and "@end" in line:
                 interfaces.append(interface)
                 interface = False
+            lines.append(line)
+    # Write the new header file.
+    with open(header, "w") as f:
+        f.writelines(lines)
     # Create implementation file.
     with open(implementationFile, "w") as f:
+        f.write("\n#import \"{}\"\n".format(os.path.basename(header)))
         for interface in interfaces:
             f.write(interface.getImplementation())
+    # @todo Delete implementation file if there is no code.
 
 def main(headerPath, exportDir, overwrite):
     headerDir = os.path.dirname(headerPath)
@@ -142,7 +154,7 @@ def main(headerPath, exportDir, overwrite):
                 # Copy header file.
                 dstPath = os.path.join(exportDir, name)
                 shutil.copyfile(srcPath, dstPath)
-                parseHeader(srcPath, exportDir, overwrite)
+                parseHeader(dstPath, exportDir, overwrite)
 
 if __name__ == "__main__":
     import argparse
