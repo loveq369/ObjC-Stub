@@ -28,15 +28,33 @@ class Interface(object):
     """ Remove all whitespace and macros from method. """
     def cleanMethod(self, method):
         # Remove the semi-colon and everything after it (comments, etc.)
+        method = method.split(";")[0]
         # Strip all whitespace again.
-        # @note macros have already been removed.
+        method = " ".join(method.split())
+        # @note Macros should have already been removed at this point.
         return method
 
     def addMethod(self, method):
         self.methods.append(self.cleanMethod(method))
 
-    def createImplementation(self, dst):
-        pass
+    def getImplementation(self):
+        s = "\n@implementation " + self.name + "\n\n"
+        for method in self.methods:
+            # Get the first brackets.
+            m = re.search(r"\((.+?(?=\)))\)", method)
+            val = m.groups(0)[0]
+            if "*" in val or "instancetype" in val:
+                ret = "    return nil;\n"
+            elif "void" in val:
+                ret = "    \n"
+            else:
+                ret = "    return 0;\n"
+            s += method + "\n"
+            s += "{\n"
+            s += ret
+            s += "}\n\n"
+        s += "@end\n"
+        return s
 
     def __str__(self):
         return "%s: %s method(s)" % (self.name, len(self.methods))
@@ -44,7 +62,10 @@ class Interface(object):
 def cleanLine(line):
     # Remove macros
     while True:
-        m = re.search(r"\w+\((.+?(?=\)))\)", line)
+        # Only search for cases where all chars are uppercase. Some
+        # interfaces are directly next to their corresponding category
+        # brackets.
+        m = re.search(r"[A-Z0-9_]+\((.+?(?=\)))\)", line)
         if not m: break
         line = line.replace(m.group(0), "")
     # Strip all excess white space.
@@ -53,10 +74,10 @@ def cleanLine(line):
 def parseHeader(header, exportDir, overwrite):
     # when parsing interfaces, always strip the method names of extra whitespace. This will make it
     # much easier to compare methods that already exist.
-    print "HEADER", header
+    #print "HEADER", header
     interface = False
     methodName = False
-    implementationFile = os.path.join(exportDir, os.path.basename(header) + ".m")
+    implementationFile = os.path.join(exportDir, os.path.basename(header.rstrip(".h")) + ".m")
     interfaces = []
     with open(header, "r") as f:
         num = 0
@@ -71,35 +92,30 @@ def parseHeader(header, exportDir, overwrite):
                     interface.addMethod(methodName)
                     methodName = False
             elif "@interface" in line:
-                print "LINE", line
+                #print "LINE", line
                 # Category.
                 if "(" in line:
                     iface = line.strip("@interface ")
                 else:
                     iface = line.split(":")[0].split(" ")[1]
                 # @interface ClassName : NSObject { -- this extracts 'ClassName'
-                print iface
+                #print iface
                 interface = Interface(iface)
-                """
-                if "@end" in line: # Might happen...
-                    interfaces.append(interface)
-                    interface = False
-                """
                 continue
             elif interface and (line.startswith("-") or line.startswith("+")):
                 if ";" in line:
-                    print "no methodName", interface.name, line
+                    #print "no methodName", interface.name, line
                     interface.addMethod(line)
                 else: # Continue to concatenate method until complete.
-                    print "methodName:", line
+                    #print "methodName:", line
                     methodName = line
             elif interface and "@end" in line:
-                # Create the implementation file
-                print str(interface)
                 interfaces.append(interface)
                 interface = False
     # Create implementation file.
-    #print str(interfaces)
+    with open(implementationFile, "w") as f:
+        for interface in interfaces:
+            f.write(interface.getImplementation())
 
 def main(headerPath, exportDir, overwrite):
     headerDir = os.path.dirname(headerPath)
