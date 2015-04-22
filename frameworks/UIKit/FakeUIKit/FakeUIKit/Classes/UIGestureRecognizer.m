@@ -25,17 +25,17 @@
 
 - (CGPoint)locationInView:(UIView*)view
 {
-    return 0;
+    return (CGPoint){};
 }
 
 - (NSUInteger)numberOfTouches
 {
-    return 0;
+    return (NSUInteger){};
 }
 
 - (CGPoint)locationOfTouch:(NSUInteger)touchIndex inView:(UIView*)view
 {
-    return 0;
+    return (CGPoint){};
 }
 
 @end

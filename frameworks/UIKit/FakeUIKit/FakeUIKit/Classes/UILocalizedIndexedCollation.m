@@ -5,7 +5,7 @@
 
 + (id)currentCollation
 {
-    return 0;
+    return [[self alloc] init];
 }
 
 - (NSInteger)sectionForSectionIndexTitleAtIndex:(NSInteger)indexTitleIndex

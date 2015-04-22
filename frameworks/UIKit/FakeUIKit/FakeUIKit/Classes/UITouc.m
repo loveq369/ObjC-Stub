@@ -5,12 +5,12 @@
 
 - (CGPoint)locationInView:(UIView *)view
 {
-    return 0;
+    return (CGPoint){};
 }
 
 - (CGPoint)previousLocationInView:(UIView *)view
 {
-    return 0;
+    return (CGPoint){};
 }
 
 @end

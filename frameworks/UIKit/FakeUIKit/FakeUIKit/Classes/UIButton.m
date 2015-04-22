@@ -5,7 +5,7 @@
 
 + (id)buttonWithType:(UIButtonType)buttonType
 {
-    return 0;
+    return [[self alloc] init];
 }
 
 - (void)setTitle:(NSString *)title forState:(UIControlState)state
@@ -70,22 +70,22 @@
 
 - (CGRect)backgroundRectForBounds:(CGRect)bounds
 {
-    return 0;
+    return (CGRect){};
 }
 
 - (CGRect)contentRectForBounds:(CGRect)bounds
 {
-    return 0;
+    return (CGRect){};
 }
 
 - (CGRect)titleRectForContentRect:(CGRect)contentRect
 {
-    return 0;
+    return (CGRect){};
 }
 
 - (CGRect)imageRectForContentRect:(CGRect)contentRect
 {
-    return 0;
+    return (CGRect){};
 }
 
 @end

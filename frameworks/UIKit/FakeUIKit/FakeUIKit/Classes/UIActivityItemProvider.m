@@ -10,7 +10,7 @@
 
 - (id)item
 {
-    return 0;
+    return [super init];
 }
 
 @end

@@ -25,7 +25,7 @@
 
 - (CGPoint)linearVelocityForItem:(id <UIDynamicItem>)item
 {
-    return 0;
+    return (CGPoint){};
 }
 
 - (void)addAngularVelocity:(CGFloat)velocity forItem:(id <UIDynamicItem>)item
@@ -35,7 +35,7 @@
 
 - (CGFloat)angularVelocityForItem:(id <UIDynamicItem>)item
 {
-    return 0;
+    return (CGFloat){};
 }
 
 @end

@@ -55,7 +55,7 @@
 
 - (CGFloat)widthForSegmentAtIndex:(NSUInteger)segment
 {
-    return 0;
+    return (CGFloat){};
 }
 
 - (void)setContentOffset:(CGSize)offset forSegmentAtIndex:(NSUInteger)segment
@@ -65,7 +65,7 @@
 
 - (CGSize)contentOffsetForSegmentAtIndex:(NSUInteger)segment
 {
-    return 0;
+    return (CGSize){};
 }
 
 - (void)setEnabled:(BOOL)enabled forSegmentAtIndex:(NSUInteger)segment
@@ -115,7 +115,7 @@
 
 - (UIOffset)contentPositionAdjustmentForSegmentType:(UISegmentedControlSegment)leftCenterRightOrAlone barMetrics:(UIBarMetrics)barMetrics UI_APPEARANCE_SELECTOR
 {
-    return 0;
+    return (UIOffset){};
 }
 
 @end

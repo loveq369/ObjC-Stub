@@ -5,7 +5,7 @@
 
 - (CGRect)textRectForBounds:(CGRect)bounds limitedToNumberOfLines:(NSInteger)numberOfLines
 {
-    return 0;
+    return (CGRect){};
 }
 
 - (void)drawTextInRect:(CGRect)rect

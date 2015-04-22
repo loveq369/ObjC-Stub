@@ -80,7 +80,7 @@
 
 - (id)targetForAction:(SEL)action withSender:(id)sender
 {
-    return 0;
+    return [super init];
 }
 
 @end

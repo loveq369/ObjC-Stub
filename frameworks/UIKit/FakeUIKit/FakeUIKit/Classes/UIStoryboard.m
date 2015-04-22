@@ -10,12 +10,12 @@
 
 - (id)instantiateInitialViewController
 {
-    return 0;
+    return [super init];
 }
 
 - (id)instantiateViewControllerWithIdentifier:(NSString *)identifier
 {
-    return 0;
+    return [super init];
 }
 
 @end

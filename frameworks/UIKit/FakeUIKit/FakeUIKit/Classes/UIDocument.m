@@ -25,7 +25,7 @@
 
 - (id)contentsForType:(NSString *)typeName error:(NSError **)outError
 {
-    return 0;
+    return [super init];
 }
 
 - (void)disableEditing
@@ -50,7 +50,7 @@
 
 - (id)changeCountTokenForSaveOperation:(UIDocumentSaveOperation)saveOperation
 {
-    return 0;
+    return [super init];
 }
 
 - (void)updateChangeCountWithToken:(id)changeCountToken forSaveOperation:(UIDocumentSaveOperation)saveOperation

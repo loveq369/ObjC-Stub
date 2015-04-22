@@ -10,7 +10,7 @@
 
 - (CGRect)rectForPageAtIndex:(NSInteger)pageIndex
 {
-    return 0;
+    return (CGRect){};
 }
 
 - (void)drawInRect:(CGRect)rect forPageAtIndex:(NSInteger)pageIndex

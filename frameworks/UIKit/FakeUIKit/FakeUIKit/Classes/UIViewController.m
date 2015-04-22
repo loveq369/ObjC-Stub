@@ -199,7 +199,7 @@
 
 - (NSUInteger)supportedInterfaceOrientations
 {
-    return 0;
+    return (NSUInteger){};
 }
 
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation

@@ -39,22 +39,22 @@
 
 - (CGRect)rectForSection:(NSInteger)section
 {
-    return 0;
+    return (CGRect){};
 }
 
 - (CGRect)rectForHeaderInSection:(NSInteger)section
 {
-    return 0;
+    return (CGRect){};
 }
 
 - (CGRect)rectForFooterInSection:(NSInteger)section
 {
-    return 0;
+    return (CGRect){};
 }
 
 - (CGRect)rectForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 0;
+    return (CGRect){};
 }
 
 - (NSIndexPath *)indexPathForRowAtPoint:(CGPoint)point
@@ -184,17 +184,17 @@
 
 - (id)dequeueReusableCellWithIdentifier:(NSString *)identifier
 {
-    return 0;
+    return [super init];
 }
 
 - (id)dequeueReusableCellWithIdentifier:(NSString *)identifier forIndexPath:(NSIndexPath *)indexPath
 {
-    return 0;
+    return [super init];
 }
 
 - (id)dequeueReusableHeaderFooterViewWithIdentifier:(NSString *)identifier
 {
-    return 0;
+    return [super init];
 }
 
 - (void)registerNib:(UINib *)nib forCellReuseIdentifier:(NSString *)identifier

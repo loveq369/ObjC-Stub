@@ -35,7 +35,7 @@
 
 - (CGRect)frameOfPresentedViewInContainerView
 {
-    return 0;
+    return (CGRect){};
 }
 
 - (BOOL)shouldPresentInFullscreen

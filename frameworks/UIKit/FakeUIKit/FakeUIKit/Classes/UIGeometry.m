@@ -40,37 +40,37 @@
 
 - (CGPoint)CGPointValue
 {
-    return 0;
+    return (CGPoint){};
 }
 
 - (CGVector)CGVectorValue
 {
-    return 0;
+    return (CGVector){};
 }
 
 - (CGSize)CGSizeValue
 {
-    return 0;
+    return (CGSize){};
 }
 
 - (CGRect)CGRectValue
 {
-    return 0;
+    return (CGRect){};
 }
 
 - (CGAffineTransform)CGAffineTransformValue
 {
-    return 0;
+    return (CGAffineTransform){};
 }
 
 - (UIEdgeInsets)UIEdgeInsetsValue
 {
-    return 0;
+    return (UIEdgeInsets){};
 }
 
 - (UIOffset)UIOffsetValue
 {
-    return 0;
+    return (UIOffset){};
 }
 
 @end
@@ -114,37 +114,37 @@
 
 - (CGPoint)decodeCGPointForKey:(NSString *)key
 {
-    return 0;
+    return (CGPoint){};
 }
 
 - (CGVector)decodeCGVectorForKey:(NSString *)key
 {
-    return 0;
+    return (CGVector){};
 }
 
 - (CGSize)decodeCGSizeForKey:(NSString *)key
 {
-    return 0;
+    return (CGSize){};
 }
 
 - (CGRect)decodeCGRectForKey:(NSString *)key
 {
-    return 0;
+    return (CGRect){};
 }
 
 - (CGAffineTransform)decodeCGAffineTransformForKey:(NSString *)key
 {
-    return 0;
+    return (CGAffineTransform){};
 }
 
 - (UIEdgeInsets)decodeUIEdgeInsetsForKey:(NSString *)key
 {
-    return 0;
+    return (UIEdgeInsets){};
 }
 
 - (UIOffset)decodeUIOffsetForKey:(NSString *)key
 {
-    return 0;
+    return (UIOffset){};
 }
 
 @end

@@ -10,7 +10,7 @@
 
 - (CGSize)rowSizeForComponent:(NSInteger)component
 {
-    return 0;
+    return (CGSize){};
 }
 
 - (UIView *)viewForRow:(NSInteger)row forComponent:(NSInteger)component

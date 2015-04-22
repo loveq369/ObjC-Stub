@@ -603,6 +603,7 @@
 		077441DC1AE84E3B003A3252 /* UIWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIWindow.m; path = Classes/UIWindow.m; sourceTree = "<group>"; };
 		077443191AE85533003A3252 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0774431B1AE85BF6003A3252 /* UIAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIAlert.h; path = Classes/UIAlert.h; sourceTree = "<group>"; };
+		0774431D1AE86C69003A3252 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -633,6 +634,7 @@
 				077440A31AE84DBB003A3252 /* Products */,
 				077443181AE85520003A3252 /* Frameworks */,
 				077440A61AE84DBB003A3252 /* Info.plist */,
+				0774431D1AE86C69003A3252 /* Prefix.pch */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1483,6 +1485,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = Prefix.pch;
 				INFOPLIST_FILE = FakeUIKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1498,6 +1501,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = Prefix.pch;
 				INFOPLIST_FILE = FakeUIKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

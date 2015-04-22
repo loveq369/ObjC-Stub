@@ -30,12 +30,12 @@
 
 - (id)dequeueReusableCellWithReuseIdentifier:(NSString *)identifier forIndexPath:(NSIndexPath*)indexPath
 {
-    return 0;
+    return [super init];
 }
 
 - (id)dequeueReusableSupplementaryViewOfKind:(NSString*)elementKind withReuseIdentifier:(NSString *)identifier forIndexPath:(NSIndexPath*)indexPath
 {
-    return 0;
+    return [super init];
 }
 
 - (NSArray *)indexPathsForSelectedItems

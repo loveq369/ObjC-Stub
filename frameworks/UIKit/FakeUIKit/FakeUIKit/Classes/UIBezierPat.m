@@ -40,7 +40,7 @@
 
 - (CGPathRef)CGPath NS_RETURNS_INNER_POINTER CF_RETURNS_NOT_RETAINED
 {
-    return 0;
+    return (CGPathRef){};
 }
 
 - (void)moveToPoint:(CGPoint)point

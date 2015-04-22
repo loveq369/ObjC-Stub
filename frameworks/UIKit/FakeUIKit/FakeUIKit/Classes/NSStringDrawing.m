@@ -9,7 +9,7 @@
 
 - (CGSize)sizeWithAttributes:(NSDictionary *)attrs
 {
-    return 0;
+    return (CGSize){};
 }
 
 - (void)drawAtPoint:(CGPoint)point withAttributes:(NSDictionary *)attrs
@@ -28,7 +28,7 @@
 
 - (CGSize)size
 {
-    return 0;
+    return (CGSize){};
 }
 
 - (void)drawAtPoint:(CGPoint)point
@@ -52,7 +52,7 @@
 
 - (CGRect)boundingRectWithSize:(CGSize)size options:(NSStringDrawingOptions)options attributes:(NSDictionary *)attributes context:(NSStringDrawingContext *)context
 {
-    return 0;
+    return (CGRect){};
 }
 
 @end
@@ -66,7 +66,7 @@
 
 - (CGRect)boundingRectWithSize:(CGSize)size options:(NSStringDrawingOptions)options context:(NSStringDrawingContext *)context
 {
-    return 0;
+    return (CGRect){};
 }
 
 @end

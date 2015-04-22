@@ -5,7 +5,7 @@
 
 - (id)objectForKey:(NSString *)anAttribute
 {
-    return 0;
+    return [super init];
 }
 
 - (NSDictionary *)fontAttributes

@@ -5,7 +5,7 @@
 
 - (id <UIViewControllerTransitionCoordinator>)transitionCoordinator
 {
-    return 0;
+    return (id <UIViewControllerTransitionCoordinator>){};
 }
 
 @end

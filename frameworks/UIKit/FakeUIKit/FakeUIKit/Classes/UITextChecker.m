@@ -5,7 +5,7 @@
 
 - (NSRange)rangeOfMisspelledWordInString:(NSString *)stringToCheck range:(NSRange)range startingAt:(NSInteger)startingOffset wrap:(BOOL)wrapFlag language:(NSString *)language
 {
-    return 0;
+    return (NSRange){};
 }
 
 - (NSArray *)guessesForWordRange:(NSRange)range inString:(NSString *)string language:(NSString *)language

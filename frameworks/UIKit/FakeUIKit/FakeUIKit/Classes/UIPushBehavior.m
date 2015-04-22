@@ -20,7 +20,7 @@
 
 - (UIOffset)targetOffsetFromCenterForItem:(id <UIDynamicItem>)item
 {
-    return 0;
+    return (UIOffset){};
 }
 
 - (void)setTargetOffsetFromCenter:(UIOffset)o forItem:(id <UIDynamicItem>)item

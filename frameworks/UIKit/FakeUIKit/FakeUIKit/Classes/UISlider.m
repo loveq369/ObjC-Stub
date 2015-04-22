@@ -40,22 +40,22 @@
 
 - (CGRect)minimumValueImageRectForBounds:(CGRect)bounds
 {
-    return 0;
+    return (CGRect){};
 }
 
 - (CGRect)maximumValueImageRectForBounds:(CGRect)bounds
 {
-    return 0;
+    return (CGRect){};
 }
 
 - (CGRect)trackRectForBounds:(CGRect)bounds
 {
-    return 0;
+    return (CGRect){};
 }
 
 - (CGRect)thumbRectForBounds:(CGRect)bounds trackRect:(CGRect)rect value:(float)value
 {
-    return 0;
+    return (CGRect){};
 }
 
 @end

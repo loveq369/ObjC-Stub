@@ -5,7 +5,7 @@
 //  Copyright (c) 2009-2014 Apple Inc. All rights reserved.
 //
 
-#import <FakeUIKit/FakeUIKit.h>
+#import <FakeUIKit/UIKit.h>
 
 @protocol UISplitViewControllerDelegate;
 

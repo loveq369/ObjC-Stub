@@ -44,7 +44,7 @@
 
 - (id)initWithFrame:(CGRect)frame reuseIdentifier:(NSString *)reuseIdentifier
 {
-    return 0;
+    return [super init];
 }
 
 @end

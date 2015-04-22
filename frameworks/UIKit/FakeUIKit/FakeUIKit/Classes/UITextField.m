@@ -5,37 +5,37 @@
 
 - (CGRect)borderRectForBounds:(CGRect)bounds
 {
-    return 0;
+    return (CGRect){};
 }
 
 - (CGRect)textRectForBounds:(CGRect)bounds
 {
-    return 0;
+    return (CGRect){};
 }
 
 - (CGRect)placeholderRectForBounds:(CGRect)bounds
 {
-    return 0;
+    return (CGRect){};
 }
 
 - (CGRect)editingRectForBounds:(CGRect)bounds
 {
-    return 0;
+    return (CGRect){};
 }
 
 - (CGRect)clearButtonRectForBounds:(CGRect)bounds
 {
-    return 0;
+    return (CGRect){};
 }
 
 - (CGRect)leftViewRectForBounds:(CGRect)bounds
 {
-    return 0;
+    return (CGRect){};
 }
 
 - (CGRect)rightViewRectForBounds:(CGRect)bounds
 {
-    return 0;
+    return (CGRect){};
 }
 
 - (void)drawTextInRect:(CGRect)rect

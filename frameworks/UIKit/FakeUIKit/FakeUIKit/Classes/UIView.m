@@ -5,7 +5,7 @@
 
 + (Class)layerClass
 {
-    return 0;
+    return (Class){};
 }
 
 - (instancetype)initWithFrame:(CGRect)frame
@@ -29,27 +29,27 @@
 
 - (CGPoint)convertPoint:(CGPoint)point toView:(UIView *)view
 {
-    return 0;
+    return (CGPoint){};
 }
 
 - (CGPoint)convertPoint:(CGPoint)point fromView:(UIView *)view
 {
-    return 0;
+    return (CGPoint){};
 }
 
 - (CGRect)convertRect:(CGRect)rect toView:(UIView *)view
 {
-    return 0;
+    return (CGRect){};
 }
 
 - (CGRect)convertRect:(CGRect)rect fromView:(UIView *)view
 {
-    return 0;
+    return (CGRect){};
 }
 
 - (CGSize)sizeThatFits:(CGSize)size
 {
-    return 0;
+    return (CGSize){};
 }
 
 - (void)sizeToFit
@@ -433,17 +433,17 @@
 
 - (CGRect)alignmentRectForFrame:(CGRect)frame
 {
-    return 0;
+    return (CGRect){};
 }
 
 - (CGRect)frameForAlignmentRect:(CGRect)alignmentRect
 {
-    return 0;
+    return (CGRect){};
 }
 
 - (UIEdgeInsets)alignmentRectInsets
 {
-    return 0;
+    return (UIEdgeInsets){};
 }
 
 - (UIView *)viewForBaselineLayout
@@ -453,7 +453,7 @@
 
 - (CGSize)intrinsicContentSize
 {
-    return 0;
+    return (CGSize){};
 }
 
 - (void)invalidateIntrinsicContentSize
@@ -463,7 +463,7 @@
 
 - (UILayoutPriority)contentHuggingPriorityForAxis:(UILayoutConstraintAxis)axis
 {
-    return 0;
+    return (UILayoutPriority){};
 }
 
 - (void)setContentHuggingPriority:(UILayoutPriority)priority forAxis:(UILayoutConstraintAxis)axis
@@ -473,7 +473,7 @@
 
 - (UILayoutPriority)contentCompressionResistancePriorityForAxis:(UILayoutConstraintAxis)axis
 {
-    return 0;
+    return (UILayoutPriority){};
 }
 
 - (void)setContentCompressionResistancePriority:(UILayoutPriority)priority forAxis:(UILayoutConstraintAxis)axis
@@ -487,12 +487,12 @@
 
 - (CGSize)systemLayoutSizeFittingSize:(CGSize)targetSize
 {
-    return 0;
+    return (CGSize){};
 }
 
 - (CGSize)systemLayoutSizeFittingSize:(CGSize)targetSize withHorizontalFittingPriority:(UILayoutPriority)horizontalFittingPriority verticalFittingPriority:(UILayoutPriority)verticalFittingPriority
 {
-    return 0;
+    return (CGSize){};
 }
 
 @end

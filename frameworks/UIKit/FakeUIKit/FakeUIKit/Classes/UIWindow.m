@@ -30,22 +30,22 @@
 
 - (CGPoint)convertPoint:(CGPoint)point toWindow:(UIWindow *)window
 {
-    return 0;
+    return (CGPoint){};
 }
 
 - (CGPoint)convertPoint:(CGPoint)point fromWindow:(UIWindow *)window
 {
-    return 0;
+    return (CGPoint){};
 }
 
 - (CGRect)convertRect:(CGRect)rect toWindow:(UIWindow *)window
 {
-    return 0;
+    return (CGRect){};
 }
 
 - (CGRect)convertRect:(CGRect)rect fromWindow:(UIWindow *)window
 {
-    return 0;
+    return (CGRect){};
 }
 
 @end

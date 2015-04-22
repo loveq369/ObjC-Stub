@@ -10,7 +10,7 @@
 
 - (CGSize)sizeForNumberOfPages:(NSInteger)pageCount
 {
-    return 0;
+    return (CGSize){};
 }
 
 @end

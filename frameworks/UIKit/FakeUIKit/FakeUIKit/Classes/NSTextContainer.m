@@ -10,7 +10,7 @@
 
 - (CGRect)lineFragmentRectForProposedRect:(CGRect)proposedRect atIndex:(NSUInteger)characterIndex writingDirection:(NSWritingDirection)baseWritingDirection remainingRect:(CGRect *)remainingRect
 {
-    return 0;
+    return (CGRect){};
 }
 
 @end

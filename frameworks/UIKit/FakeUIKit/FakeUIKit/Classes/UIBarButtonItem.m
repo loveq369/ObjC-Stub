@@ -55,7 +55,7 @@
 
 - (CGFloat)backgroundVerticalPositionAdjustmentForBarMetrics:(UIBarMetrics)barMetrics UI_APPEARANCE_SELECTOR
 {
-    return 0;
+    return (CGFloat){};
 }
 
 - (void)setTitlePositionAdjustment:(UIOffset)adjustment forBarMetrics:(UIBarMetrics)barMetrics UI_APPEARANCE_SELECTOR
@@ -65,7 +65,7 @@
 
 - (UIOffset)titlePositionAdjustmentForBarMetrics:(UIBarMetrics)barMetrics UI_APPEARANCE_SELECTOR
 {
-    return 0;
+    return (UIOffset){};
 }
 
 - (void)setBackButtonBackgroundImage:(UIImage *)backgroundImage forState:(UIControlState)state barMetrics:(UIBarMetrics)barMetrics UI_APPEARANCE_SELECTOR
@@ -85,7 +85,7 @@
 
 - (UIOffset)backButtonTitlePositionAdjustmentForBarMetrics:(UIBarMetrics)barMetrics UI_APPEARANCE_SELECTOR
 {
-    return 0;
+    return (UIOffset){};
 }
 
 - (void)setBackButtonBackgroundVerticalPositionAdjustment:(CGFloat)adjustment forBarMetrics:(UIBarMetrics)barMetrics UI_APPEARANCE_SELECTOR
@@ -95,7 +95,7 @@
 
 - (CGFloat)backButtonBackgroundVerticalPositionAdjustmentForBarMetrics:(UIBarMetrics)barMetrics UI_APPEARANCE_SELECTOR
 {
-    return 0;
+    return (CGFloat){};
 }
 
 @end

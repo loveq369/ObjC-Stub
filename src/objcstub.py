@@ -20,6 +20,19 @@ import re
 import shutil
 import sys
 
+class HeaderFile(object):
+    def __init__(self, path, interfaces):
+        self.path = path 
+        self.interfaces = interfaces
+
+    def getHeaderImportPath(self):
+        return os.path.basename(self.path)
+
+    def getImplementationPath(self):
+        basedir = os.path.dirname(self.path)
+        basename = os.path.basename(self.path)
+        return os.path.join(basedir, basename.rstrip(".h") + ".m")
+
 class Interface(object):
     def __init__(self, name):
         self.name = name
@@ -28,7 +41,7 @@ class Interface(object):
     """ Remove all whitespace and macros from method. """
     def cleanMethod(self, method):
         # Remove macros.
-        method = cleanLine(method)
+        method = getCleanLine(method)
         # Remove the semi-colon and everything after it (comments, etc.)
         method = method.split(";")[0]
         # Strip all whitespace again.
@@ -38,32 +51,10 @@ class Interface(object):
     def addMethod(self, method):
         self.methods.append(self.cleanMethod(method))
 
-    def getImplementation(self):
-        s = "\n@implementation " + self.name + "\n\n"
-        for method in self.methods:
-            isStatic = "+" in method
-            # Get the first brackets.
-            m = re.search(r"\((.+?(?=\)))\)", method)
-            val = m.groups(0)[0]
-            if "*" in val:
-                ret = "    return nil;\n"
-            elif "instancetype" in val:
-                ret = isStatic and "    return [[self alloc] init];\n" or "    return [super init];\n"
-            elif "void" in val:
-                ret = "    \n"
-            else:
-                ret = "    return 0;\n"
-            s += method + "\n"
-            s += "{\n"
-            s += ret
-            s += "}\n\n"
-        s += "@end\n"
-        return s
-
     def __str__(self):
         return "{}: {} method(s)".format(self.name, len(self.methods))
 
-def cleanLine(line):
+def getCleanLine(line):
     # Remove macros
     while True:
         # Only search for cases where all chars are uppercase. Some
@@ -75,65 +66,111 @@ def cleanLine(line):
     # Strip all excess white space.
     return " ".join(line.split())
 
-def parseHeader(header, exportDir, overwrite):
-    # when parsing interfaces, always strip the method names of extra whitespace. This will make it
-    # much easier to compare methods that already exist.
-    #print "HEADER", header
-    interface = False
-    methodName = False
-    implementationFile = os.path.join(exportDir, os.path.basename(header.rstrip(".h")) + ".m")
-    interfaces = []
-    lines = []
-    with open(header, "r") as f:
-        num = 0
-        for line in f:
-            num = num + 1
-            if methodName:
-                # Continue appending to the method name until the entire defintion
-                # has been added.
-                methodName = methodName + " " + line
-                if ";" in line:
-                    interface.addMethod(methodName)
-                    methodName = False
-            elif "#import" in line:
-                # @hack Replace UIKit with FakeUIKit until this becomes a CLI option.
-                line = line.replace("<UIKit/", "<FakeUIKit/")
-            elif "@interface" in line:
-                #print "LINE", line
-                iface = cleanLine(line)
-                # Category.
-                if "(" in iface:
-                    iface = iface.strip("@interface ")
-                else: # Normal interface
-                    iface = iface.split(":")[0].split(" ")[1]
-                # @interface ClassName : NSObject { -- this extracts 'ClassName'
-                interface = Interface(iface)
-            elif interface and (line.startswith("-") or line.startswith("+")):
-                if ";" in line:
-                    #print "no methodName", interface.name, line
-                    interface.addMethod(line)
-                else: # Continue to concatenate method until complete.
-                    #print "methodName:", line
-                    methodName = line
-            elif interface and "@end" in line:
-                interfaces.append(interface)
-                interface = False
-            lines.append(line)
-    # Write the new header file.
-    with open(header, "w") as f:
-        f.writelines(lines)
-    # Create implementation file.
-    with open(implementationFile, "w") as f:
-        f.write("\n#import \"{}\"\n".format(os.path.basename(header)))
-        for interface in interfaces:
-            f.write(interface.getImplementation())
-    # @todo Delete implementation file if there is no code.
+def getTypedef(line):
+    m = re.search(r"[A-Z0-9_]+\((.+?(?=\)))\)", line)
+    print "typedef:", line
+    line = m.groups(0)[0].split(",")[1]
+    return " ".join(line.split())
+
+class FrameworkReader(object):
+    def __init__(self, path, exportdir, overwrite):
+        self.path = path
+        self.exportdir = exportdir
+        self.overwrite = overwrite
+        self.headers = []
+        self.typedefs = []
+
+    def addHeader(self, header):
+        # when parsing interfaces, always strip the method names of extra whitespace. This will make it
+        # much easier to compare methods that already exist.
+        #print "HEADER", header
+        interface = False
+        methodName = False
+        interfaces = []
+        lines = []
+        print "addHeader", header
+        with open(header, "r") as f:
+            num = 0
+            for line in f:
+                num = num + 1
+                if methodName:
+                    # Continue appending to the method name until the entire defintion
+                    # has been added.
+                    methodName = methodName + " " + line
+                    if ";" in line:
+                        interface.addMethod(methodName)
+                        methodName = False
+                elif "#import" in line:
+                    # @hack Replace UIKit with FakeUIKit until this becomes a CLI option.
+                    line = line.replace("<UIKit/", "<FakeUIKit/")
+                elif "NS_ENUM(" in line or "NS_OPTIONS(" in line:
+                    typedef = getTypedef(line)
+                    self.typedefs.append(typedef)
+                elif "@interface" in line:
+                    #print "LINE", line
+                    iface = getCleanLine(line)
+                    # Category.
+                    if "(" in iface:
+                        iface = iface.strip("@interface ")
+                    else: # Normal interface
+                        iface = iface.split(":")[0].split(" ")[1]
+                    # @interface ClassName : NSObject { -- this extracts 'ClassName'
+                    interface = Interface(iface)
+                elif interface and (line.startswith("-") or line.startswith("+")):
+                    if ";" in line:
+                        #print "no methodName", interface.name, line
+                        interface.addMethod(line)
+                    else: # Continue to concatenate method until complete.
+                        #print "methodName:", line
+                        methodName = line
+                elif interface and "@end" in line:
+                    interfaces.append(interface)
+                    interface = False
+                lines.append(line)
+        # Write the new header file.
+        with open(header, "w") as f:
+            f.writelines(lines)
+        self.headers.append(HeaderFile(header, interfaces))
+
+    def getImplementation(self, interface):
+        s = "\n@implementation " + interface.name + "\n\n"
+        for method in interface.methods:
+            isStatic = "+" in method
+            # Get the first brackets.
+            m = re.search(r"\((.+?(?=\)))\)", method)
+            val = m.groups(0)[0]
+            if "*" in val:
+                ret = "    return nil;\n"
+            elif val.lower() in ("instancetype", "id"):
+                ret = isStatic and "    return [[self alloc] init];\n" or "    return [super init];\n"
+            elif "void" in val:
+                ret = "    \n"
+            elif val.lower() in ("int", "bool", "nsinteger", "double", "float") or val in self.typedefs: # primitive numeric values.
+                ret = "    return 0;\n"
+            else: # Cast type
+                ret = "    return (" + val + "){};\n"
+            s += method + "\n"
+            s += "{\n"
+            s += ret
+            s += "}\n\n"
+        s += "@end\n"
+        return s
+
+    def writeImplementations(self, exportdir):
+        for header in self.headers:
+            imppath = os.path.join(exportdir, header.getImplementationPath())
+            with open(imppath, "w") as f:
+                f.write("\n#import \"{}\"\n".format(header.getHeaderImportPath()))
+                for interface in header.interfaces:
+                    f.write(self.getImplementation(interface))
+            # @todo Delete implementation file if there is no code.
 
 def main(headerPath, exportDir, overwrite):
     headerDir = os.path.dirname(headerPath)
     # Any import that is part of a framework is automatically searched within the respective folder.
     # For example, if we find <UIKit/UIFont.h>, 'UIFont.h' will attempt to be found within the base
     # directory.
+    reader = FrameworkReader(headerPath, exportDir, overwrite)
     with open(headerPath, "r") as f:
         num = 0
         for line in f:
@@ -154,7 +191,11 @@ def main(headerPath, exportDir, overwrite):
                 # Copy header file.
                 dstPath = os.path.join(exportDir, name)
                 shutil.copyfile(srcPath, dstPath)
-                parseHeader(dstPath, exportDir, overwrite)
+                reader.addHeader(dstPath)
+    # Create implementation file.
+    print reader.typedefs
+    #reader.replaceInHeader("<UIKit/", "<FakeUIKit/")
+    reader.writeImplementations(exportDir)
 
 if __name__ == "__main__":
     import argparse

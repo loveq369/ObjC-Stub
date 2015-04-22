@@ -40,7 +40,7 @@
 
 - (id)valueForPasteboardType:(NSString *)pasteboardType
 {
-    return 0;
+    return [super init];
 }
 
 - (void)setValue:(id)value forPasteboardType:(NSString *)pasteboardType

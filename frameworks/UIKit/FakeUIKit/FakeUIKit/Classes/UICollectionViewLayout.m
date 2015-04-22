@@ -71,12 +71,12 @@
 
 + (Class)layoutAttributesClass
 {
-    return 0;
+    return (Class){};
 }
 
 + (Class)invalidationContextClass
 {
-    return 0;
+    return (Class){};
 }
 
 - (void)prepareLayout
@@ -126,17 +126,17 @@
 
 - (CGPoint)targetContentOffsetForProposedContentOffset:(CGPoint)proposedContentOffset withScrollingVelocity:(CGPoint)velocity
 {
-    return 0;
+    return (CGPoint){};
 }
 
 - (CGPoint)targetContentOffsetForProposedContentOffset:(CGPoint)proposedContentOffset
 {
-    return 0;
+    return (CGPoint){};
 }
 
 - (CGSize)collectionViewContentSize
 {
-    return 0;
+    return (CGSize){};
 }
 
 @end

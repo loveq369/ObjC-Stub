@@ -40,7 +40,7 @@
 
 - (UIOffset)titlePositionAdjustment UI_APPEARANCE_SELECTOR
 {
-    return 0;
+    return (UIOffset){};
 }
 
 @end

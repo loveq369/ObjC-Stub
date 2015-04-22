@@ -14,7 +14,7 @@
 
 - (CGRect)printRect
 {
-    return 0;
+    return (CGRect){};
 }
 
 @end

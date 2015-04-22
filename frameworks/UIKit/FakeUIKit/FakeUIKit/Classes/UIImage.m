@@ -85,7 +85,7 @@
 
 - (CGImageRef)CGImage NS_RETURNS_INNER_POINTER CF_RETURNS_NOT_RETAINED
 {
-    return 0;
+    return (CGImageRef){};
 }
 
 + (UIImage *)animatedImageNamed:(NSString *)name duration:(NSTimeInterval)duration

@@ -15,7 +15,7 @@
 
 - (CGFloat)valueForAnimatedKey:(NSString *)key
 {
-    return 0;
+    return (CGFloat){};
 }
 
 @end

@@ -25,7 +25,7 @@
 
 - (id)additionalContentForURL:(NSURL *)absoluteURL error:(NSError **)error
 {
-    return 0;
+    return [super init];
 }
 
 - (BOOL)writeAdditionalContent:(id)content toURL:(NSURL *)absoluteURL originalContentsURL:(NSURL *)absoluteOriginalContentsURL error:(NSError **)error
