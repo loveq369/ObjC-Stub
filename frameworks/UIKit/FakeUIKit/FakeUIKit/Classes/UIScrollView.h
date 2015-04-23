@@ -31,7 +31,7 @@ UIKIT_EXTERN const CGFloat UIScrollViewDecelerationRateFast NS_AVAILABLE_IOS(3_0
 
 NS_CLASS_AVAILABLE_IOS(2_0) @interface UIScrollView : UIView <NSCoding> {
   @package
-    id                _delegate;
+    id  __unsafe_unretained _delegate;
 }
 
 @property(nonatomic)         CGPoint                      contentOffset;                  // default CGPointZero

@@ -35,7 +35,7 @@
 
 - (CGFloat)angularVelocityForItem:(id <UIDynamicItem>)item
 {
-    return (CGFloat){};
+    return 0.0f;
 }
 
 @end

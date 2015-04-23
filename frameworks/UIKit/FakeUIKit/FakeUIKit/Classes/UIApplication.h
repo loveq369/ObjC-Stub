@@ -5,6 +5,7 @@
 //  Copyright (c) 2005-2014 Apple Inc. All rights reserved.
 //
 
+
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 #import <FakeUIKit/UIKitDefines.h>
@@ -107,7 +108,7 @@ typedef NS_ENUM(NSInteger, UIUserInterfaceLayoutDirection) {
 NS_CLASS_AVAILABLE_IOS(2_0) @interface UIApplication : UIResponder <UIActionSheetDelegate>
 {
   @package
-    id <UIApplicationDelegate>  _delegate;
+    id <UIApplicationDelegate> __unsafe_unretained _delegate;
     NSMutableSet               *_exclusiveTouchWindows;
     UIEvent                    *_event;
     UIEvent                    *_touchesEvent;

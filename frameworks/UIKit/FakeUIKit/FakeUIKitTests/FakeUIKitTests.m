@@ -6,7 +6,6 @@
 //  Copyright (c) 2015 Upstart Illustration LLC. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
 @interface FakeUIKitTests : XCTestCase

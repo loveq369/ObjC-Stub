@@ -43,6 +43,8 @@ UIKIT_EXTERN NSString *const UIApplicationStateRestorationSystemVersionKey NS_AV
 
 #pragma mark -- State Restoration object protocols and methods --
 
+@protocol UIStateRestoring;
+
 @protocol UIObjectRestoration;
 // Conform to this protocol if you want your objects to participate in state restoration. 
 //

@@ -33,7 +33,7 @@ NS_CLASS_DEPRECATED_IOS(2_0, 5_0, "UIAccelerometer has been replaced by the Core
 @interface UIAccelerometer : NSObject {
   @private
     NSTimeInterval               _updateInterval;
-    id <UIAccelerometerDelegate> _delegate;
+    id <UIAccelerometerDelegate> __unsafe_unretained _delegate;
     struct {
         unsigned int delegateDidAccelerate:1;
         unsigned int reserved:31;

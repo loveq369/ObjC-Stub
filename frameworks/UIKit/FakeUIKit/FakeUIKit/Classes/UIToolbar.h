@@ -18,7 +18,7 @@
 
 NS_CLASS_AVAILABLE_IOS(2_0) @interface UIToolbar : UIView <UIBarPositioning> {
   @private
-    id                     _delegate;
+    id __unsafe_unretained _delegate;
     NSArray               *_items;
     UIColor               *_barTintColor;
     struct {

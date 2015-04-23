@@ -71,12 +71,12 @@
 
 + (Class)layoutAttributesClass
 {
-    return (Class){};
+    return nil;
 }
 
 + (Class)invalidationContextClass
 {
-    return (Class){};
+    return nil;
 }
 
 - (void)prepareLayout

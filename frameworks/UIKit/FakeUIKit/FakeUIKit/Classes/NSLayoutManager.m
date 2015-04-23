@@ -85,12 +85,12 @@
 
 - (CGGlyph)glyphAtIndex:(NSUInteger)glyphIndex isValidIndex:(BOOL *)isValidIndex
 {
-    return (CGGlyph){};
+    return 0;
 }
 
 - (CGGlyph)glyphAtIndex:(NSUInteger)glyphIndex
 {
-    return (CGGlyph){};
+    return 0;
 }
 
 - (BOOL)isValidGlyphIndex:(NSUInteger)glyphIndex
@@ -105,17 +105,17 @@
 
 - (NSUInteger)characterIndexForGlyphAtIndex:(NSUInteger)glyphIndex
 {
-    return (NSUInteger){};
+    return 0;
 }
 
 - (NSUInteger)glyphIndexForCharacterAtIndex:(NSUInteger)charIndex
 {
-    return (NSUInteger){};
+    return 0;
 }
 
 - (NSUInteger)getGlyphsInRange:(NSRange)glyphRange glyphs:(CGGlyph *)glyphBuffer properties:(NSGlyphProperty *)props characterIndexes:(NSUInteger *)charIndexBuffer bidiLevels:(unsigned char *)bidiLevelBuffer
 {
-    return (NSUInteger){};
+    return 0;
 }
 
 - (void)setTextContainer:(NSTextContainer *)container forGlyphRange:(NSRange)glyphRange
@@ -160,12 +160,12 @@
 
 - (NSUInteger)firstUnlaidCharacterIndex
 {
-    return (NSUInteger){};
+    return 0;
 }
 
 - (NSUInteger)firstUnlaidGlyphIndex
 {
-    return (NSUInteger){};
+    return 0;
 }
 
 - (NSTextContainer *)textContainerForGlyphAtIndex:(NSUInteger)glyphIndex effectiveRange:(NSRangePointer)effectiveGlyphRange
@@ -250,27 +250,27 @@
 
 - (NSUInteger)glyphIndexForPoint:(CGPoint)point inTextContainer:(NSTextContainer *)container fractionOfDistanceThroughGlyph:(CGFloat *)partialFraction
 {
-    return (NSUInteger){};
+    return 0;
 }
 
 - (NSUInteger)glyphIndexForPoint:(CGPoint)point inTextContainer:(NSTextContainer *)container
 {
-    return (NSUInteger){};
+    return 0;
 }
 
 - (CGFloat)fractionOfDistanceThroughGlyphForPoint:(CGPoint)point inTextContainer:(NSTextContainer *)container
 {
-    return (CGFloat){};
+    return 0;
 }
 
 - (NSUInteger)characterIndexForPoint:(CGPoint)point inTextContainer:(NSTextContainer *)container fractionOfDistanceBetweenInsertionPoints:(CGFloat *)partialFraction
 {
-    return (NSUInteger){};
+    return 0;
 }
 
 - (NSUInteger)getLineFragmentInsertionPointsForCharacterAtIndex:(NSUInteger)charIndex alternatePositions:(BOOL)aFlag inDisplayOrder:(BOOL)dFlag positions:(CGFloat *)positions characterIndexes:(NSUInteger *)charIndexes
 {
-    return (NSUInteger){};
+    return 0;
 }
 
 - (void)enumerateLineFragmentsForGlyphRange:(NSRange)glyphRange usingBlock:(void (^)(CGRect rect, CGRect usedRect, NSTextContainer *textContainer, NSRange glyphRange, BOOL *stop))block

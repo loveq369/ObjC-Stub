@@ -23,7 +23,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UINavigationBar : UIView <NSCoding, UIBar
     NSMutableArray *_itemStack;
     CGFloat         _rightMargin;
     unsigned        _state;
-    id              _delegate;
+    id __unsafe_unretained _delegate;
     UIView         *_backgroundView;
     UIView         *_titleView;
     NSArray        *_leftViews;

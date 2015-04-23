@@ -14,7 +14,7 @@
 
 - (id)accessibilityElementAtIndex:(NSInteger)index
 {
-    return [super init];
+    return nil;
 }
 
 - (NSInteger)indexOfAccessibilityElement:(id)element

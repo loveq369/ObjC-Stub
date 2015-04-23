@@ -5,7 +5,7 @@
 //  Copyright (c) 2014 Apple Inc. All rights reserved.
 //
 
-#import <FakeUIKit/UIKit.h>
+#import <FakeUIKit/UIView.h>
 
 /* UIVisualEffectView is a class that provides a simple abstraction over complex visual effects. Depending on the desired effect, the results may affect content layered behind the view or content added to the view's contentView. Please see the notes for each UIVisualEffect for more details.
 

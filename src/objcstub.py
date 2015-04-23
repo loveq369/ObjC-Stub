@@ -10,6 +10,14 @@ Notes:
       the source header file that was given.
     - Currently this put all files in ./obj-c_output/
 
+@todo Recursively search for headers that are not already in the repository AFTER the
+main header file has been parsed.
+@todo Better typedef parsing using the Typedef class.
+@todo return type of 'id' may be 'return nil' in all cases.
+@todo Everything after a category MUST be removed. Consider: UIViewController (UIStateRestoration) <ProtocolName>
+      '<ProtocolName>' must be removed!
+@todo Interfaces can sometimes be on one line.
+
 @since 2015.04.21
 @copyright
 
@@ -46,6 +54,7 @@ class Interface(object):
         method = method.split(";")[0]
         # Strip all whitespace again.
         method = " ".join(method.split())
+        method = method.replace(" NS_DESIGNATED_INITIALIZER", "")
         return method
 
     def addMethod(self, method):
@@ -53,6 +62,11 @@ class Interface(object):
 
     def __str__(self):
         return "{}: {} method(s)".format(self.name, len(self.methods))
+
+class Typedef(object):
+    def __init__(self, _type, name):
+        self.type = _type
+        self.name = name
 
 def getCleanLine(line):
     # Remove macros
@@ -66,11 +80,18 @@ def getCleanLine(line):
     # Strip all excess white space.
     return " ".join(line.split())
 
-def getTypedef(line):
+def getEnumTypedef(line):
     m = re.search(r"[A-Z0-9_]+\((.+?(?=\)))\)", line)
     print "typedef:", line
     line = m.groups(0)[0].split(",")[1]
+    #_type, name = m.groups(0)[0].split(",")
+    #return Typedef(_type.replace(" ", ""), name.replace(" ", ""))
     return " ".join(line.split())
+
+""" Parses a simple typedef such as: 'typedef NSInteger NSTimeInterval;' """
+def getTypedef(line):
+    _, _type, name = line.split(" ")
+    return Typedef(_type.replace(" ", ""), name.replace(" ", "").rstrip(";"))
 
 class FrameworkReader(object):
     def __init__(self, path, exportdir, overwrite):
@@ -104,8 +125,13 @@ class FrameworkReader(object):
                     # @hack Replace UIKit with FakeUIKit until this becomes a CLI option.
                     line = line.replace("<UIKit/", "<FakeUIKit/")
                 elif "NS_ENUM(" in line or "NS_OPTIONS(" in line:
-                    typedef = getTypedef(line)
+                    typedef = getEnumTypedef(line)
                     self.typedefs.append(typedef)
+                    """
+                    elif "typedef" in line:
+                        typedef = getTypedef(line)
+                        self.typedefs.append(typedef)
+                    """
                 elif "@interface" in line:
                     #print "LINE", line
                     iface = getCleanLine(line)
@@ -139,13 +165,13 @@ class FrameworkReader(object):
             # Get the first brackets.
             m = re.search(r"\((.+?(?=\)))\)", method)
             val = m.groups(0)[0]
-            if "*" in val:
+            if "*" in val or val.lower() in ("cgpathref", "class"):
                 ret = "    return nil;\n"
             elif val.lower() in ("instancetype", "id"):
                 ret = isStatic and "    return [[self alloc] init];\n" or "    return [super init];\n"
             elif "void" in val:
                 ret = "    \n"
-            elif val.lower() in ("int", "bool", "nsinteger", "double", "float") or val in self.typedefs: # primitive numeric values.
+            elif val.lower() in ("int", "bool", "nsinteger", "nsuinteger", "double", "float", "cgfloat", "cgglyph") or val in self.typedefs: # primitive numeric values.
                 ret = "    return 0;\n"
             else: # Cast type
                 ret = "    return (" + val + "){};\n"
@@ -165,12 +191,25 @@ class FrameworkReader(object):
                     f.write(self.getImplementation(interface))
             # @todo Delete implementation file if there is no code.
 
-def main(headerPath, exportDir, overwrite):
+def copyHeaderFile(headerPath, name, exportDir):
     headerDir = os.path.dirname(headerPath)
-    # Any import that is part of a framework is automatically searched within the respective folder.
-    # For example, if we find <UIKit/UIFont.h>, 'UIFont.h' will attempt to be found within the base
-    # directory.
-    reader = FrameworkReader(headerPath, exportDir, overwrite)
+    dstPath = os.path.join(exportDir, name)
+    srcPath = os.path.join(headerDir, name)
+    if not os.path.exists(srcPath): # Source file does not exist.
+        return False
+    shutil.copyfile(srcPath, dstPath)
+    return dstPath
+
+def readHeaderFile(reader, headerPath, exportDir):
+    name = os.path.basename(headerPath)
+    dstPath = copyHeaderFile(headerPath, name, exportDir)
+    if not dstPath:
+        print "Failed to copy header file:", dstPath
+        return False
+    reader.addHeader(dstPath)
+
+
+def readAllHeaderFiles(reader, headerPath, exportDir):
     with open(headerPath, "r") as f:
         num = 0
         for line in f:
@@ -182,19 +221,23 @@ def main(headerPath, exportDir, overwrite):
                     print(header, "Line #", num, "- Failed to match #import declaration", line)
                     continue
                 name = m.group(0)
-                # Extract the header file name only.
-                name = name.strip("<").strip(">").split("/")[-1]
-                srcPath = os.path.join(headerDir, name)
-                if not os.path.exists(srcPath):
-                    #print("Header file ignored:", path)
+                dstPath = copyHeaderFile(headerPath, name, exportDir)
+                if not dstPath:
                     continue
-                # Copy header file.
-                dstPath = os.path.join(exportDir, name)
-                shutil.copyfile(srcPath, dstPath)
                 reader.addHeader(dstPath)
-    # Create implementation file.
-    print reader.typedefs
+    # @todo Copy the this header file to the directory.
+
+def main(headerPath, exportDir, overwrite, headerFile):
+    # Any import that is part of a framework is automatically searched within the respective folder.
+    # For example, if we find <UIKit/UIFont.h>, 'UIFont.h' will attempt to be found within the base
+    # directory.
+    reader = FrameworkReader(headerPath, exportDir, overwrite)
+    if headerFile:
+        readHeaderFile(reader, headerPath, exportDir)
+    else:
+        readAllHeaderFiles(reader, headerPath, exportDir)
     #reader.replaceInHeader("<UIKit/", "<FakeUIKit/")
+    # Create implementation file.
     reader.writeImplementations(exportDir)
 
 if __name__ == "__main__":
@@ -210,6 +253,11 @@ if __name__ == "__main__":
         , action="store_true"
         , help="Overwrite implementation, regardless if there is an existing implementation"
     )
+    parser.add_argument("--header-file"
+        , dest="header_file"
+        , action="store_true"
+        , help="Indicates that a header and implementation file should be created from the file provided"
+    )
     args = parser.parse_args()
     if not os.path.exists(args.header):
         print "Header file does not exist at:", args.header
@@ -220,5 +268,5 @@ if __name__ == "__main__":
         sys.exit(1)
     if not os.path.isdir(exportDir):
         os.makedirs(exportDir)
-    main(args.header, exportDir, args.overwrite_implementation)
+    main(args.header, exportDir, args.overwrite_implementation, args.header_file)
     sys.exit(0)

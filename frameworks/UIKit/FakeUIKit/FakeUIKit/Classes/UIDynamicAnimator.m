@@ -35,7 +35,7 @@
 
 - (NSTimeInterval)elapsedTime
 {
-    return (NSTimeInterval){};
+    return 0;
 }
 
 @end

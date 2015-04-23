@@ -60,17 +60,17 @@
 
 - (NSUInteger)supportedInterfaceOrientationsForWindow:(UIWindow *)window
 {
-    return (NSUInteger){};
+    return 0;
 }
 
 - (UIBackgroundTaskIdentifier)beginBackgroundTaskWithExpirationHandler:(void(^)(void))handler
 {
-    return (UIBackgroundTaskIdentifier){};
+    return 0;
 }
 
 - (UIBackgroundTaskIdentifier)beginBackgroundTaskWithName:(NSString *)taskName expirationHandler:(void(^)(void))handler
 {
-    return (UIBackgroundTaskIdentifier){};
+    return 0;
 }
 
 - (void)endBackgroundTask:(UIBackgroundTaskIdentifier)identifier

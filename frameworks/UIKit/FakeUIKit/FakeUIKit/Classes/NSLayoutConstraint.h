@@ -80,8 +80,8 @@ NS_CLASS_AVAILABLE_IOS(6_0)
 {
     @private
     id _container;
-    id _firstItem;
-    id _secondItem;
+    id __unsafe_unretained _firstItem;
+    id __unsafe_unretained _secondItem;
     CGFloat _constant;
     CGFloat _loweredConstant;
     id _markerAndPositiveExtraVar;

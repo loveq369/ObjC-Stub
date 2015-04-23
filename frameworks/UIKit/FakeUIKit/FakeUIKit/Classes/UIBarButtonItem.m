@@ -55,7 +55,7 @@
 
 - (CGFloat)backgroundVerticalPositionAdjustmentForBarMetrics:(UIBarMetrics)barMetrics UI_APPEARANCE_SELECTOR
 {
-    return (CGFloat){};
+    return 0.0f;
 }
 
 - (void)setTitlePositionAdjustment:(UIOffset)adjustment forBarMetrics:(UIBarMetrics)barMetrics UI_APPEARANCE_SELECTOR
@@ -95,7 +95,7 @@
 
 - (CGFloat)backButtonBackgroundVerticalPositionAdjustmentForBarMetrics:(UIBarMetrics)barMetrics UI_APPEARANCE_SELECTOR
 {
-    return (CGFloat){};
+    return 0.0f;
 }
 
 @end

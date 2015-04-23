@@ -175,7 +175,7 @@
 
 - (CGColorRef)CGColor NS_RETURNS_INNER_POINTER CF_RETURNS_NOT_RETAINED
 {
-    return (CGColorRef){};
+    return nil;
 }
 
 @end

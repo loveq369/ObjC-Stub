@@ -1,6 +1,10 @@
 
 #import "UIVisualEffectView.h"
 
+@implementation UIVisualEffect
+
+@end
+
 @implementation UIBlurEffect
 
 + (UIBlurEffect *)effectWithStyle:(UIBlurEffectStyle)style
@@ -21,7 +25,7 @@
 
 @implementation UIVisualEffectView
 
-- (instancetype)initWithEffect:(UIVisualEffect *)effect NS_DESIGNATED_INITIALIZER
+- (instancetype)initWithEffect:(UIVisualEffect *)effect
 {
     return [super init];
 }

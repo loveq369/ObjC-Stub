@@ -57,7 +57,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIBarButtonItem : UIBarItem <NSCoding> {
     NSString     *_title;
     NSSet        *_possibleTitles;
     SEL           _action;
-    id            _target;
+    id __unsafe_unretained _target;
     UIImage      *_image;
     UIImage      *_landscapeImagePhone;
     UIEdgeInsets  _imageInsets;
@@ -142,4 +142,3 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIBarButtonItem : UIBarItem <NSCoding> {
 - (CGFloat)backButtonBackgroundVerticalPositionAdjustmentForBarMetrics:(UIBarMetrics)barMetrics NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR;
 
 @end
-

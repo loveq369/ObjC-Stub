@@ -5,7 +5,7 @@
 
 + (Class)layerClass
 {
-    return (Class){};
+    return nil;
 }
 
 - (instancetype)initWithFrame:(CGRect)frame
@@ -463,7 +463,7 @@
 
 - (UILayoutPriority)contentHuggingPriorityForAxis:(UILayoutConstraintAxis)axis
 {
-    return (UILayoutPriority){};
+    return 0;
 }
 
 - (void)setContentHuggingPriority:(UILayoutPriority)priority forAxis:(UILayoutConstraintAxis)axis
@@ -473,7 +473,7 @@
 
 - (UILayoutPriority)contentCompressionResistancePriorityForAxis:(UILayoutConstraintAxis)axis
 {
-    return (UILayoutPriority){};
+    return 0;
 }
 
 - (void)setContentCompressionResistancePriority:(UILayoutPriority)priority forAxis:(UILayoutConstraintAxis)axis

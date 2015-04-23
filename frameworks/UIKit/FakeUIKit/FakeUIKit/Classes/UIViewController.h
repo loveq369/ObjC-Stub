@@ -11,6 +11,8 @@
 #import <FakeUIKit/UIApplication.h>
 #import <FakeUIKit/UIStateRestoration.h>
 #import <FakeUIKit/UITraitCollection.h>
+#import <FakeUIKit/UIResponder.h>
+#import <FakeUIKit/UIAppearance.h>
 
 /*
   UIViewController is a generic controller base class that manages a view.  It has methods that are called
@@ -28,6 +30,12 @@
 @class UIStoryboard, UIStoryboardSegue;
 @class UIScrollView;
 @protocol UIViewControllerTransitionCoordinator;
+
+#ifndef __UIVIEWCONTROLLER_H__
+#define __UIVIEWCONTROLLER_H__
+
+typedef NS_ENUM(NSInteger, UIModelTransitionStyle);
+typedef NS_ENUM(NSInteger, UIModalPresentationStyle);
 
 typedef NS_ENUM(NSInteger, UIModalTransitionStyle) {
     UIModalTransitionStyleCoverVertical = 0,
@@ -47,6 +55,8 @@ typedef NS_ENUM(NSInteger, UIModalPresentationStyle) {
         UIModalPresentationPopover NS_ENUM_AVAILABLE_IOS(8_0),
         UIModalPresentationNone NS_ENUM_AVAILABLE_IOS(7_0) = -1,         
 };
+
+@protocol UIContentContainer;
 
 @protocol UIContentContainer <NSObject>
 
@@ -121,10 +131,10 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIViewController : UIResponder <NSCoding,
     
     UISearchDisplayController *_searchDisplayController;
     
-    UIModalTransitionStyle _modalTransitionStyle;
+    enum UIModalTransitionStyle _modalTransitionStyle;
     UIModalPresentationStyle _modalPresentationStyle;
     
-    UIInterfaceOrientation _lastKnownInterfaceOrientation;
+    enum UIInterfaceOrientation _lastKnownInterfaceOrientation;
 
     UIPopoverController*    _popoverController;
     UIView *_containerViewInSheet;
@@ -542,3 +552,5 @@ UIKIT_EXTERN NSString *const UIViewControllerHierarchyInconsistencyException NS_
 @property (nonatomic,readonly) UIPresentationController *presentationController NS_AVAILABLE_IOS(8_0);
 @property (nonatomic,readonly) UIPopoverPresentationController *popoverPresentationController NS_AVAILABLE_IOS(8_0);
 @end
+
+#endif

@@ -45,7 +45,7 @@
 
 - (CGFloat)titleVerticalPositionAdjustmentForBarMetrics:(UIBarMetrics)barMetrics UI_APPEARANCE_SELECTOR
 {
-    return (CGFloat){};
+    return 0.0f;
 }
 
 @end

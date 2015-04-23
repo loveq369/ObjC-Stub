@@ -11,7 +11,7 @@
 #import <FakeUIKit/UILabel.h>
 #import <FakeUIKit/UITableView.h>
 
-@class UISearchBar, UITableView, UIViewController, UIPopoverController;
+@class UISearchBar, UITableView, UIViewController, UIPopoverController, UINavigationItem;
 @protocol UITableViewDataSource, UITableViewDelegate, UISearchDisplayDelegate;
 
 NS_CLASS_DEPRECATED_IOS(3_0, 8_0, "UISearchDisplayController has been replaced with UISearchController")

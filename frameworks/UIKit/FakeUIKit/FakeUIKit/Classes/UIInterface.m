@@ -39,22 +39,22 @@
 
 + (CGFloat)labelFontSize
 {
-    return (CGFloat){};
+    return 0.0f;
 }
 
 + (CGFloat)buttonFontSize
 {
-    return (CGFloat){};
+    return 0.0f;
 }
 
 + (CGFloat)smallSystemFontSize
 {
-    return (CGFloat){};
+    return 0.0f;
 }
 
 + (CGFloat)systemFontSize
 {
-    return (CGFloat){};
+    return 0.0f;
 }
 
 @end

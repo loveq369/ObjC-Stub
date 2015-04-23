@@ -17,7 +17,7 @@
 
 NS_CLASS_AVAILABLE_IOS(4_2) @interface UIPrintFormatter : NSObject <NSCopying> {
   @private
-    UIPrintPageRenderer *_printPageRenderer;
+//    UIPrintPageRenderer *_printPageRenderer;
     CGFloat              _maximumContentHeight;
     CGFloat              _maximumContentWidth;
     UIEdgeInsets         _contentInsets;

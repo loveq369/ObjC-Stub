@@ -5,7 +5,7 @@
 //  Copyright (c) 2012-2014 Apple Inc. All rights reserved.
 //
 
-#import <FakeUIKit/UIKit.h>
+#import <FakeUIKit/UICollectionViewLayout.h>
 
 NS_CLASS_AVAILABLE_IOS(7_0) @interface UICollectionViewTransitionLayout : UICollectionViewLayout
 

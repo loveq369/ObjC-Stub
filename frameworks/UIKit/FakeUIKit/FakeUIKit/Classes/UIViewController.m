@@ -199,7 +199,7 @@
 
 - (NSUInteger)supportedInterfaceOrientations
 {
-    return (NSUInteger){};
+    return 0;
 }
 
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
@@ -345,7 +345,7 @@
 
 @end
 
-@implementation UIViewController (UIStateRestoration) <UIStateRestoring>
+@implementation UIViewController (UIStateRestoration)
 
 - (void) encodeRestorableStateWithCoder:(NSCoder *)coder
 {
@@ -381,7 +381,7 @@
 
 @end
 
-@implementation UIViewController(NSExtensionAdditions) <NSExtensionRequestHandling>
+@implementation UIViewController(NSExtensionAdditions)
 
 @end
 

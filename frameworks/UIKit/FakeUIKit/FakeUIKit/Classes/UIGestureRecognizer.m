@@ -30,7 +30,7 @@
 
 - (NSUInteger)numberOfTouches
 {
-    return (NSUInteger){};
+    return 0;
 }
 
 - (CGPoint)locationOfTouch:(NSUInteger)touchIndex inView:(UIView*)view

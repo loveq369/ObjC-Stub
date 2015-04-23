@@ -3,17 +3,17 @@
 
 @implementation UITableViewController
 
-- (instancetype)initWithStyle:(UITableViewStyle)style NS_DESIGNATED_INITIALIZER
+- (instancetype)initWithStyle:(UITableViewStyle)style
 {
     return [super init];
 }
 
-- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil NS_DESIGNATED_INITIALIZER
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     return [super init];
 }
 
-- (instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
 {
     return [super init];
 }

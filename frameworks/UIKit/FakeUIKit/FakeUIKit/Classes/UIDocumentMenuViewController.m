@@ -3,12 +3,12 @@
 
 @implementation UIDocumentMenuViewController
 
-- (instancetype)initWithDocumentTypes:(NSArray *)allowedUTIs inMode:(UIDocumentPickerMode)mode NS_DESIGNATED_INITIALIZER
+- (instancetype)initWithDocumentTypes:(NSArray *)allowedUTIs inMode:(UIDocumentPickerMode)mode
 {
     return [super init];
 }
 
-- (instancetype)initWithURL:(NSURL *)url inMode:(UIDocumentPickerMode)mode NS_DESIGNATED_INITIALIZER
+- (instancetype)initWithURL:(NSURL *)url inMode:(UIDocumentPickerMode)mode
 {
     return [super init];
 }

@@ -5,8 +5,6 @@
 //  Copyright (c) 2014 Apple Inc. All rights reserved.
 //
 
-#import <FakeUIKit/UIKit.h>
-
 #import <FakeUIKit/UIPresentationController.h>
 #import <FakeUIKit/UIPopoverSupport.h>
 #import <FakeUIKit/UIPopoverBackgroundView.h>

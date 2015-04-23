@@ -5,7 +5,7 @@
 //  Copyright (c) 2014 Apple Inc. All rights reserved.
 //
 
-#import <FakeUIKit/UIKit.h>
+#import <FakeUIKit/UIViewController.h>
 #import <FakeUIKit/UIInputView.h>
 #import <FakeUIKit/UITextInput.h>
 

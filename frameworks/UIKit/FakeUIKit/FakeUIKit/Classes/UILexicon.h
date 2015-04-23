@@ -5,9 +5,6 @@
 //  Copyright (c) 2014 Apple Inc. All rights reserved.
 //
 
-#import <FakeUIKit/UIKit.h>
-
-
 NS_CLASS_AVAILABLE_IOS(8_0) @interface UILexiconEntry : NSObject <NSCopying>
 // -documentText returns the intended text to be inserted into the document for a given -userInput.
 // -userInput represents the expected typed string, which need not match the actual typed string.

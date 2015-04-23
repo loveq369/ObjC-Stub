@@ -55,7 +55,7 @@
 
 - (CGFloat)widthForSegmentAtIndex:(NSUInteger)segment
 {
-    return (CGFloat){};
+    return 0.0f;
 }
 
 - (void)setContentOffset:(CGSize)offset forSegmentAtIndex:(NSUInteger)segment

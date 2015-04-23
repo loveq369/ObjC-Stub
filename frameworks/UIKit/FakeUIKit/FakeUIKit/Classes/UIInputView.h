@@ -5,7 +5,7 @@
 //  Copyright (c) 2012-2014 Apple Inc. All rights reserved.
 //
 
-#import <FakeUIKit/UIKit.h>
+#import <FakeUIKit/UIView.h>
 
 typedef NS_ENUM(NSInteger, UIInputViewStyle) {
     UIInputViewStyleDefault,
