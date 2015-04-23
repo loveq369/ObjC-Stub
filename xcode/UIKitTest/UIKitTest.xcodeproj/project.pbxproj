@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07433DAE1AE955E800EF26B4 /* MasterViewControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = 07433DAD1AE955E800EF26B4 /* MasterViewControllerSpec.mm */; };
 		077443CF1AE95158003A3252 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 077443CE1AE95158003A3252 /* main.m */; };
 		077443D21AE95158003A3252 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 077443D11AE95158003A3252 /* AppDelegate.m */; };
 		077443D51AE95158003A3252 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 077443D41AE95158003A3252 /* MasterViewController.m */; };
@@ -14,7 +15,6 @@
 		077443DB1AE95158003A3252 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 077443D91AE95158003A3252 /* Main.storyboard */; };
 		077443DD1AE95158003A3252 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 077443DC1AE95158003A3252 /* Images.xcassets */; };
 		077443E01AE95158003A3252 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 077443DE1AE95158003A3252 /* LaunchScreen.xib */; };
-		077EF8E71AE9528F00FE4E12 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077EF8E61AE9528F00FE4E12 /* UIKit.framework */; };
 		077EF8E91AE9528F00FE4E12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077EF8E81AE9528F00FE4E12 /* Foundation.framework */; };
 		077EF8EB1AE9528F00FE4E12 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077EF8EA1AE9528F00FE4E12 /* CoreGraphics.framework */; };
 		077EF8F11AE9528F00FE4E12 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 077EF8F01AE9528F00FE4E12 /* main.m */; };
@@ -27,6 +27,8 @@
 
 /* Begin PBXFileReference section */
 		07433DA81AE9551100EF26B4 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		07433DAD1AE955E800EF26B4 /* MasterViewControllerSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MasterViewControllerSpec.mm; path = "UIKitTest-Specs/Specs/MasterViewControllerSpec.mm"; sourceTree = SOURCE_ROOT; };
+		07433DB01AE9584B00EF26B4 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		077443C91AE95158003A3252 /* UIKitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		077443CD1AE95158003A3252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		077443CE1AE95158003A3252 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -68,7 +70,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				077EF8EB1AE9528F00FE4E12 /* CoreGraphics.framework in Frameworks */,
-				077EF8E71AE9528F00FE4E12 /* UIKit.framework in Frameworks */,
 				077EF8E91AE9528F00FE4E12 /* Foundation.framework in Frameworks */,
 				268ABC8AF5B0EF58096EBB64 /* libPods-UIKitTest-Specs.a in Frameworks */,
 			);
@@ -77,6 +78,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07433DAF1AE9560F00EF26B4 /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				077EF8FA1AE9528F00FE4E12 /* ExampleSpec.mm */,
+				07433DAD1AE955E800EF26B4 /* MasterViewControllerSpec.mm */,
+			);
+			name = Specs;
+			sourceTree = "<group>";
+		};
 		077443C01AE95158003A3252 = {
 			isa = PBXGroup;
 			children = (
@@ -138,11 +148,11 @@
 		077EF8EC1AE9528F00FE4E12 /* UIKitTest-Specs */ = {
 			isa = PBXGroup;
 			children = (
+				07433DAF1AE9560F00EF26B4 /* Specs */,
 				077EF8EF1AE9528F00FE4E12 /* Rakefile */,
 				077EF8F21AE9528F00FE4E12 /* UIKitTest-Specs-Info.plist */,
 				077EF8F41AE9528F00FE4E12 /* UIKitTest-Specs-Prefix.pch */,
 				077EF8F81AE9528F00FE4E12 /* Default-568h@2x.png */,
-				077EF8FA1AE9528F00FE4E12 /* ExampleSpec.mm */,
 				077EF8ED1AE9528F00FE4E12 /* Supporting Files */,
 			);
 			path = "UIKitTest-Specs";
@@ -153,6 +163,7 @@
 			children = (
 				077EF8EE1AE9528F00FE4E12 /* Info.plist */,
 				077EF8F01AE9528F00FE4E12 /* main.m */,
+				07433DB01AE9584B00EF26B4 /* Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -314,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				077EF8F11AE9528F00FE4E12 /* main.m in Sources */,
+				07433DAE1AE955E800EF26B4 /* MasterViewControllerSpec.mm in Sources */,
 				077EF8FB1AE9528F00FE4E12 /* ExampleSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,6 +462,7 @@
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PREFIX_HEADER = "UIKitTest-Specs/Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -471,6 +484,7 @@
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PREFIX_HEADER = "UIKitTest-Specs/Prefix.pch";
 				INFOPLIST_FILE = "UIKitTest-Specs/Info.plist";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = (
