@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		077440A81AE84DBB003A3252 /* FakeUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440A71AE84DBB003A3252 /* FakeUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		077440AE1AE84DBB003A3252 /* FakeUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077440A21AE84DBB003A3252 /* FakeUIKit.framework */; };
-		077440B51AE84DBB003A3252 /* FakeUIKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 077440B41AE84DBB003A3252 /* FakeUIKitTests.m */; };
 		077441DD1AE84E3B003A3252 /* NSAttributedString.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440BF1AE84E3A003A3252 /* NSAttributedString.h */; };
 		077441DF1AE84E3B003A3252 /* NSFileProviderExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440C11AE84E3A003A3252 /* NSFileProviderExtension.h */; };
 		077441E11AE84E3B003A3252 /* NSLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440C31AE84E3A003A3252 /* NSLayoutConstraint.h */; };
@@ -309,23 +307,10 @@
 		077443BF1AE94D90003A3252 /* UIPopoverSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 077443BE1AE94D90003A3252 /* UIPopoverSupport.h */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		077440AF1AE84DBB003A3252 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 077440991AE84DBB003A3252 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 077440A11AE84DBB003A3252;
-			remoteInfo = FakeUIKit;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		077440A21AE84DBB003A3252 /* FakeUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FakeUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		077440A61AE84DBB003A3252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = FakeUIKit/Info.plist; sourceTree = "<group>"; };
 		077440A71AE84DBB003A3252 /* FakeUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FakeUIKit.h; sourceTree = "<group>"; };
-		077440AD1AE84DBB003A3252 /* FakeUIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FakeUIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		077440B31AE84DBB003A3252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		077440B41AE84DBB003A3252 /* FakeUIKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FakeUIKitTests.m; sourceTree = "<group>"; };
 		077440BF1AE84E3A003A3252 /* NSAttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSAttributedString.h; path = Classes/NSAttributedString.h; sourceTree = "<group>"; };
 		077440C01AE84E3A003A3252 /* NSAttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSAttributedString.m; path = Classes/NSAttributedString.m; sourceTree = "<group>"; };
 		077440C11AE84E3A003A3252 /* NSFileProviderExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSFileProviderExtension.h; path = Classes/NSFileProviderExtension.h; sourceTree = "<group>"; };
@@ -636,14 +621,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		077440AA1AE84DBB003A3252 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				077440AE1AE84DBB003A3252 /* FakeUIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -651,7 +628,6 @@
 			isa = PBXGroup;
 			children = (
 				077440A41AE84DBB003A3252 /* Source */,
-				077440B11AE84DBB003A3252 /* FakeUIKitTests */,
 				077440A31AE84DBB003A3252 /* Products */,
 				077443181AE85520003A3252 /* Frameworks */,
 				077440A61AE84DBB003A3252 /* Info.plist */,
@@ -663,7 +639,6 @@
 			isa = PBXGroup;
 			children = (
 				077440A21AE84DBB003A3252 /* FakeUIKit.framework */,
-				077440AD1AE84DBB003A3252 /* FakeUIKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -676,23 +651,6 @@
 			);
 			name = Source;
 			path = FakeUIKit;
-			sourceTree = "<group>";
-		};
-		077440B11AE84DBB003A3252 /* FakeUIKitTests */ = {
-			isa = PBXGroup;
-			children = (
-				077440B41AE84DBB003A3252 /* FakeUIKitTests.m */,
-				077440B21AE84DBB003A3252 /* Supporting Files */,
-			);
-			path = FakeUIKitTests;
-			sourceTree = "<group>";
-		};
-		077440B21AE84DBB003A3252 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				077440B31AE84DBB003A3252 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		077440BE1AE84E1E003A3252 /* Classes */ = {
@@ -1191,24 +1149,6 @@
 			productReference = 077440A21AE84DBB003A3252 /* FakeUIKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		077440AC1AE84DBB003A3252 /* FakeUIKitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 077440BB1AE84DBB003A3252 /* Build configuration list for PBXNativeTarget "FakeUIKitTests" */;
-			buildPhases = (
-				077440A91AE84DBB003A3252 /* Sources */,
-				077440AA1AE84DBB003A3252 /* Frameworks */,
-				077440AB1AE84DBB003A3252 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				077440B01AE84DBB003A3252 /* PBXTargetDependency */,
-			);
-			name = FakeUIKitTests;
-			productName = FakeUIKitTests;
-			productReference = 077440AD1AE84DBB003A3252 /* FakeUIKitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1219,9 +1159,6 @@
 				ORGANIZATIONNAME = "Upstart Illustration LLC";
 				TargetAttributes = {
 					077440A11AE84DBB003A3252 = {
-						CreatedOnToolsVersion = 6.3;
-					};
-					077440AC1AE84DBB003A3252 = {
 						CreatedOnToolsVersion = 6.3;
 					};
 				};
@@ -1239,20 +1176,12 @@
 			projectRoot = "";
 			targets = (
 				077440A11AE84DBB003A3252 /* FakeUIKit */,
-				077440AC1AE84DBB003A3252 /* FakeUIKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		077440A01AE84DBB003A3252 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		077440AB1AE84DBB003A3252 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1411,23 +1340,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		077440A91AE84DBB003A3252 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				077440B51AE84DBB003A3252 /* FakeUIKitTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		077440B01AE84DBB003A3252 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 077440A11AE84DBB003A3252 /* FakeUIKit */;
-			targetProxy = 077440AF1AE84DBB003A3252 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		077440B61AE84DBB003A3252 /* Debug */ = {
@@ -1550,36 +1463,6 @@
 			};
 			name = Release;
 		};
-		077440BC1AE84DBB003A3252 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = FakeUIKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		077440BD1AE84DBB003A3252 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = FakeUIKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1599,14 +1482,7 @@
 				077440BA1AE84DBB003A3252 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		077440BB1AE84DBB003A3252 /* Build configuration list for PBXNativeTarget "FakeUIKitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				077440BC1AE84DBB003A3252 /* Debug */,
-				077440BD1AE84DBB003A3252 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

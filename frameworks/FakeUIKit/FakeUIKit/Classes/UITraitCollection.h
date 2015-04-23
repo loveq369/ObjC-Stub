@@ -11,8 +11,6 @@
 #import <FakeUIKit/UIDevice.h>
 #import <FakeUIKit/UIInterface.h>
 
-#ifdef INCLUDE_UIKIT_NONSENSE
-
 /*! A trait collection encapsulates the system traits of an interface's environment. */
 NS_CLASS_AVAILABLE_IOS(8_0) @interface UITraitCollection : NSObject <NSCopying, NSSecureCoding>
 
@@ -36,8 +34,6 @@ NS_CLASS_AVAILABLE_IOS(8_0) @interface UITraitCollection : NSObject <NSCopying, 
 @property (nonatomic, readonly) UIUserInterfaceSizeClass verticalSizeClass; // unspecified: UIUserInterfaceSizeClassUnspecified
 
 @end
-
-#endif
 
 /*! Trait environments expose a trait collection that describes their environment. */
 @protocol UITraitEnvironment <NSObject>
