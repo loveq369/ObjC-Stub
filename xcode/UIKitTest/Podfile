@@ -1,0 +1,5 @@
+platform :ios, '7.0'
+
+target 'UIKitTest-Specs', :exclusive => true do
+    pod 'Cedar', :head
+end

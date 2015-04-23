@@ -1,4 +1,4 @@
-#import <Cedar-iOS/Cedar-iOS.h>
+#import <Cedar/Cedar-iOS.h>
 
 int main(int argc, char * argv[])
 {
