@@ -7,154 +7,154 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		077440A81AE84DBB003A3252 /* FakeUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440A71AE84DBB003A3252 /* FakeUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		077441DD1AE84E3B003A3252 /* NSAttributedString.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440BF1AE84E3A003A3252 /* NSAttributedString.h */; };
-		077441DF1AE84E3B003A3252 /* NSFileProviderExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440C11AE84E3A003A3252 /* NSFileProviderExtension.h */; };
-		077441E11AE84E3B003A3252 /* NSLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440C31AE84E3A003A3252 /* NSLayoutConstraint.h */; };
-		077441E31AE84E3B003A3252 /* NSLayoutManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440C51AE84E3A003A3252 /* NSLayoutManager.h */; };
-		077441E51AE84E3B003A3252 /* NSParagraphStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440C71AE84E3A003A3252 /* NSParagraphStyle.h */; };
-		077441E71AE84E3B003A3252 /* NSShadow.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440C91AE84E3A003A3252 /* NSShadow.h */; };
-		077441E91AE84E3B003A3252 /* NSStringDrawing.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440CB1AE84E3A003A3252 /* NSStringDrawing.h */; };
-		077441EB1AE84E3B003A3252 /* NSText.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440CD1AE84E3A003A3252 /* NSText.h */; };
-		077441ED1AE84E3B003A3252 /* NSTextAttachment.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440CF1AE84E3A003A3252 /* NSTextAttachment.h */; };
-		077441EF1AE84E3B003A3252 /* NSTextContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440D11AE84E3A003A3252 /* NSTextContainer.h */; };
-		077441F11AE84E3B003A3252 /* NSTextStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440D31AE84E3A003A3252 /* NSTextStorage.h */; };
-		077441F31AE84E3B003A3252 /* UIAccelerometer.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440D51AE84E3A003A3252 /* UIAccelerometer.h */; };
-		077441F51AE84E3B003A3252 /* UIAccessibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440D71AE84E3A003A3252 /* UIAccessibility.h */; };
-		077441F71AE84E3B003A3252 /* UIActionSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440D91AE84E3A003A3252 /* UIActionSheet.h */; };
-		077441F91AE84E3B003A3252 /* UIActivity.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440DB1AE84E3A003A3252 /* UIActivity.h */; };
-		077441FB1AE84E3B003A3252 /* UIActivityIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440DD1AE84E3A003A3252 /* UIActivityIndicatorView.h */; };
-		077441FD1AE84E3B003A3252 /* UIActivityItemProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440DF1AE84E3A003A3252 /* UIActivityItemProvider.h */; };
-		077441FF1AE84E3B003A3252 /* UIActivityViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440E11AE84E3A003A3252 /* UIActivityViewController.h */; };
-		077442011AE84E3B003A3252 /* UIAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440E31AE84E3A003A3252 /* UIAlertController.h */; };
-		077442031AE84E3B003A3252 /* UIAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440E51AE84E3A003A3252 /* UIAlertView.h */; };
-		077442051AE84E3B003A3252 /* UIAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440E71AE84E3A003A3252 /* UIAppearance.h */; };
-		077442071AE84E3B003A3252 /* UIApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440E91AE84E3A003A3252 /* UIApplication.h */; };
-		077442091AE84E3B003A3252 /* UIAttachmentBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440EB1AE84E3A003A3252 /* UIAttachmentBehavior.h */; };
-		0774420B1AE84E3B003A3252 /* UIBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440ED1AE84E3A003A3252 /* UIBarButtonItem.h */; };
-		0774420D1AE84E3B003A3252 /* UIBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440EF1AE84E3A003A3252 /* UIBarItem.h */; };
-		077442101AE84E3B003A3252 /* UIBezierPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440F21AE84E3A003A3252 /* UIBezierPath.h */; };
-		077442111AE84E3B003A3252 /* UIButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440F31AE84E3A003A3252 /* UIButton.h */; };
-		077442131AE84E3B003A3252 /* UICollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440F51AE84E3A003A3252 /* UICollectionView.h */; };
-		077442151AE84E3B003A3252 /* UICollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440F71AE84E3A003A3252 /* UICollectionViewCell.h */; };
-		077442171AE84E3B003A3252 /* UICollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440F91AE84E3A003A3252 /* UICollectionViewController.h */; };
-		077442191AE84E3B003A3252 /* UICollectionViewFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440FB1AE84E3A003A3252 /* UICollectionViewFlowLayout.h */; };
-		0774421B1AE84E3B003A3252 /* UICollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440FD1AE84E3A003A3252 /* UICollectionViewLayout.h */; };
-		0774421D1AE84E3B003A3252 /* UICollectionViewTransitionLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440FF1AE84E3A003A3252 /* UICollectionViewTransitionLayout.h */; };
-		0774421F1AE84E3B003A3252 /* UICollisionBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441011AE84E3A003A3252 /* UICollisionBehavior.h */; };
-		077442211AE84E3B003A3252 /* UIColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441031AE84E3A003A3252 /* UIColor.h */; };
-		077442231AE84E3B003A3252 /* UIControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441051AE84E3A003A3252 /* UIControl.h */; };
-		077442251AE84E3B003A3252 /* UIDataDetectors.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441071AE84E3A003A3252 /* UIDataDetectors.h */; };
-		077442271AE84E3B003A3252 /* UIDatePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441091AE84E3A003A3252 /* UIDatePicker.h */; };
-		077442291AE84E3B003A3252 /* UIDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774410B1AE84E3A003A3252 /* UIDevice.h */; };
-		0774422B1AE84E3B003A3252 /* UIDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774410D1AE84E3A003A3252 /* UIDocument.h */; };
-		0774422D1AE84E3B003A3252 /* UIDocumentInteractionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774410F1AE84E3A003A3252 /* UIDocumentInteractionController.h */; };
-		0774422F1AE84E3B003A3252 /* UIDocumentMenuViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441111AE84E3A003A3252 /* UIDocumentMenuViewController.h */; };
-		077442311AE84E3B003A3252 /* UIDocumentPickerExtensionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441131AE84E3A003A3252 /* UIDocumentPickerExtensionViewController.h */; };
-		077442331AE84E3B003A3252 /* UIDocumentPickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441151AE84E3A003A3252 /* UIDocumentPickerViewController.h */; };
-		077442351AE84E3B003A3252 /* UIDynamicAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441171AE84E3A003A3252 /* UIDynamicAnimator.h */; };
-		077442371AE84E3B003A3252 /* UIDynamicBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441191AE84E3A003A3252 /* UIDynamicBehavior.h */; };
-		077442391AE84E3B003A3252 /* UIDynamicItemBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774411B1AE84E3A003A3252 /* UIDynamicItemBehavior.h */; };
-		0774423B1AE84E3B003A3252 /* UIEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774411D1AE84E3B003A3252 /* UIEvent.h */; };
-		0774423D1AE84E3B003A3252 /* UIFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774411F1AE84E3B003A3252 /* UIFont.h */; };
-		0774423F1AE84E3B003A3252 /* UIFontDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441211AE84E3B003A3252 /* UIFontDescriptor.h */; };
-		077442411AE84E3B003A3252 /* UIGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441231AE84E3B003A3252 /* UIGeometry.h */; };
-		077442431AE84E3B003A3252 /* UIGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441251AE84E3B003A3252 /* UIGestureRecognizer.h */; };
-		077442451AE84E3B003A3252 /* UIGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441271AE84E3B003A3252 /* UIGraphics.h */; };
-		077442471AE84E3B003A3252 /* UIGravityBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441291AE84E3B003A3252 /* UIGravityBehavior.h */; };
-		077442491AE84E3B003A3252 /* UIImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774412B1AE84E3B003A3252 /* UIImage.h */; };
-		0774424B1AE84E3B003A3252 /* UIImageAsset.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774412D1AE84E3B003A3252 /* UIImageAsset.h */; };
-		0774424D1AE84E3B003A3252 /* UIImagePickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774412F1AE84E3B003A3252 /* UIImagePickerController.h */; };
-		0774424F1AE84E3B003A3252 /* UIImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441311AE84E3B003A3252 /* UIImageView.h */; };
-		077442511AE84E3B003A3252 /* UIInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441331AE84E3B003A3252 /* UIInputView.h */; };
-		077442531AE84E3B003A3252 /* UIInputViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441351AE84E3B003A3252 /* UIInputViewController.h */; };
-		077442551AE84E3B003A3252 /* UIInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441371AE84E3B003A3252 /* UIInterface.h */; };
-		077442571AE84E3B003A3252 /* UIKitDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441391AE84E3B003A3252 /* UIKitDefines.h */; };
-		077442591AE84E3B003A3252 /* UILabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774413B1AE84E3B003A3252 /* UILabel.h */; };
-		0774425B1AE84E3B003A3252 /* UILexicon.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774413D1AE84E3B003A3252 /* UILexicon.h */; };
-		0774425D1AE84E3B003A3252 /* UILocalizedIndexedCollation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774413F1AE84E3B003A3252 /* UILocalizedIndexedCollation.h */; };
-		0774425F1AE84E3B003A3252 /* UILocalNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441411AE84E3B003A3252 /* UILocalNotification.h */; };
-		077442611AE84E3B003A3252 /* UILongPressGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441431AE84E3B003A3252 /* UILongPressGestureRecognizer.h */; };
-		077442631AE84E3B003A3252 /* UIManagedDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441451AE84E3B003A3252 /* UIManagedDocument.h */; };
-		077442651AE84E3B003A3252 /* UIMenuController.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441471AE84E3B003A3252 /* UIMenuController.h */; };
-		077442671AE84E3B003A3252 /* UIMotionEffect.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441491AE84E3B003A3252 /* UIMotionEffect.h */; };
-		077442691AE84E3B003A3252 /* UINavigationBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774414B1AE84E3B003A3252 /* UINavigationBar.h */; };
-		0774426B1AE84E3B003A3252 /* UINavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774414D1AE84E3B003A3252 /* UINavigationController.h */; };
-		0774426D1AE84E3B003A3252 /* UINib.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774414F1AE84E3B003A3252 /* UINib.h */; };
-		0774426F1AE84E3B003A3252 /* UINibDeclarations.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441511AE84E3B003A3252 /* UINibDeclarations.h */; };
-		077442711AE84E3B003A3252 /* UINibLoading.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441531AE84E3B003A3252 /* UINibLoading.h */; };
-		077442731AE84E3B003A3252 /* UIPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441551AE84E3B003A3252 /* UIPageControl.h */; };
-		077442751AE84E3B003A3252 /* UIPageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441571AE84E3B003A3252 /* UIPageViewController.h */; };
-		077442771AE84E3B003A3252 /* UIPanGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441591AE84E3B003A3252 /* UIPanGestureRecognizer.h */; };
-		077442791AE84E3B003A3252 /* UIPasteboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774415B1AE84E3B003A3252 /* UIPasteboard.h */; };
-		0774427B1AE84E3B003A3252 /* UIPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774415D1AE84E3B003A3252 /* UIPickerView.h */; };
-		0774427D1AE84E3B003A3252 /* UIPinchGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774415F1AE84E3B003A3252 /* UIPinchGestureRecognizer.h */; };
-		0774427F1AE84E3B003A3252 /* UIPopoverBackgroundView.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441611AE84E3B003A3252 /* UIPopoverBackgroundView.h */; };
-		077442811AE84E3B003A3252 /* UIPopoverController.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441631AE84E3B003A3252 /* UIPopoverController.h */; };
-		077442831AE84E3B003A3252 /* UIPopoverPresentationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441651AE84E3B003A3252 /* UIPopoverPresentationController.h */; };
-		077442851AE84E3B003A3252 /* UIPresentationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441671AE84E3B003A3252 /* UIPresentationController.h */; };
-		077442871AE84E3B003A3252 /* UIPrinter.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441691AE84E3B003A3252 /* UIPrinter.h */; };
-		077442891AE84E3B003A3252 /* UIPrinterPickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774416B1AE84E3B003A3252 /* UIPrinterPickerController.h */; };
-		0774428B1AE84E3B003A3252 /* UIPrintError.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774416D1AE84E3B003A3252 /* UIPrintError.h */; };
-		0774428D1AE84E3B003A3252 /* UIPrintFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774416F1AE84E3B003A3252 /* UIPrintFormatter.h */; };
-		0774428F1AE84E3B003A3252 /* UIPrintInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441711AE84E3B003A3252 /* UIPrintInfo.h */; };
-		077442911AE84E3B003A3252 /* UIPrintInteractionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441731AE84E3B003A3252 /* UIPrintInteractionController.h */; };
-		077442931AE84E3B003A3252 /* UIPrintPageRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441751AE84E3B003A3252 /* UIPrintPageRenderer.h */; };
-		077442951AE84E3B003A3252 /* UIPrintPaper.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441771AE84E3B003A3252 /* UIPrintPaper.h */; };
-		077442971AE84E3B003A3252 /* UIProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441791AE84E3B003A3252 /* UIProgressView.h */; };
-		077442991AE84E3B003A3252 /* UIPushBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774417B1AE84E3B003A3252 /* UIPushBehavior.h */; };
-		0774429B1AE84E3B003A3252 /* UIReferenceLibraryViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774417D1AE84E3B003A3252 /* UIReferenceLibraryViewController.h */; };
-		0774429D1AE84E3B003A3252 /* UIRefreshControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774417F1AE84E3B003A3252 /* UIRefreshControl.h */; };
-		0774429F1AE84E3B003A3252 /* UIResponder.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441811AE84E3B003A3252 /* UIResponder.h */; };
-		077442A11AE84E3B003A3252 /* UIRotationGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441831AE84E3B003A3252 /* UIRotationGestureRecognizer.h */; };
-		077442A31AE84E3B003A3252 /* UIScreen.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441851AE84E3B003A3252 /* UIScreen.h */; };
-		077442A51AE84E3B003A3252 /* UIScreenEdgePanGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441871AE84E3B003A3252 /* UIScreenEdgePanGestureRecognizer.h */; };
-		077442A71AE84E3B003A3252 /* UIScreenMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441891AE84E3B003A3252 /* UIScreenMode.h */; };
-		077442A91AE84E3B003A3252 /* UIScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774418B1AE84E3B003A3252 /* UIScrollView.h */; };
-		077442AB1AE84E3B003A3252 /* UISearchBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774418D1AE84E3B003A3252 /* UISearchBar.h */; };
-		077442AD1AE84E3B003A3252 /* UISearchController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774418F1AE84E3B003A3252 /* UISearchController.h */; };
-		077442AF1AE84E3B003A3252 /* UISearchDisplayController.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441911AE84E3B003A3252 /* UISearchDisplayController.h */; };
-		077442B11AE84E3B003A3252 /* UISegmentedControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441931AE84E3B003A3252 /* UISegmentedControl.h */; };
-		077442B31AE84E3B003A3252 /* UISlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441951AE84E3B003A3252 /* UISlider.h */; };
-		077442B51AE84E3B003A3252 /* UISnapBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441971AE84E3B003A3252 /* UISnapBehavior.h */; };
-		077442B71AE84E3B003A3252 /* UISplitViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441991AE84E3B003A3252 /* UISplitViewController.h */; };
-		077442B91AE84E3B003A3252 /* UIStateRestoration.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774419B1AE84E3B003A3252 /* UIStateRestoration.h */; };
-		077442BB1AE84E3B003A3252 /* UIStepper.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774419D1AE84E3B003A3252 /* UIStepper.h */; };
-		077442BD1AE84E3B003A3252 /* UIStoryboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774419F1AE84E3B003A3252 /* UIStoryboard.h */; };
-		077442BF1AE84E3B003A3252 /* UIStoryboardPopoverSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441A11AE84E3B003A3252 /* UIStoryboardPopoverSegue.h */; };
-		077442C11AE84E3B003A3252 /* UIStoryboardSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441A31AE84E3B003A3252 /* UIStoryboardSegue.h */; };
-		077442C31AE84E3B003A3252 /* UIStringDrawing.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441A51AE84E3B003A3252 /* UIStringDrawing.h */; };
-		077442C51AE84E3B003A3252 /* UISwipeGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441A71AE84E3B003A3252 /* UISwipeGestureRecognizer.h */; };
-		077442C81AE84E3B003A3252 /* UISwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441AA1AE84E3B003A3252 /* UISwitch.h */; };
-		077442C91AE84E3B003A3252 /* UITabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441AB1AE84E3B003A3252 /* UITabBar.h */; };
-		077442CB1AE84E3B003A3252 /* UITabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441AD1AE84E3B003A3252 /* UITabBarController.h */; };
-		077442CD1AE84E3B003A3252 /* UITabBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441AF1AE84E3B003A3252 /* UITabBarItem.h */; };
-		077442CF1AE84E3B003A3252 /* UITableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441B11AE84E3B003A3252 /* UITableView.h */; };
-		077442D11AE84E3B003A3252 /* UITableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441B31AE84E3B003A3252 /* UITableViewCell.h */; };
-		077442D31AE84E3B003A3252 /* UITableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441B51AE84E3B003A3252 /* UITableViewController.h */; };
-		077442D51AE84E3B003A3252 /* UITableViewHeaderFooterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441B71AE84E3B003A3252 /* UITableViewHeaderFooterView.h */; };
-		077442D71AE84E3B003A3252 /* UITapGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441B91AE84E3B003A3252 /* UITapGestureRecognizer.h */; };
-		077442D91AE84E3B003A3252 /* UITextChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441BB1AE84E3B003A3252 /* UITextChecker.h */; };
-		077442DB1AE84E3B003A3252 /* UITextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441BD1AE84E3B003A3252 /* UITextField.h */; };
-		077442DD1AE84E3B003A3252 /* UITextInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441BF1AE84E3B003A3252 /* UITextInput.h */; };
-		077442DF1AE84E3B003A3252 /* UITextInputTraits.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441C11AE84E3B003A3252 /* UITextInputTraits.h */; };
-		077442E11AE84E3B003A3252 /* UITextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441C31AE84E3B003A3252 /* UITextView.h */; };
-		077442E31AE84E3B003A3252 /* UIToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441C51AE84E3B003A3252 /* UIToolbar.h */; };
-		077442E61AE84E3B003A3252 /* UITouch.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441C81AE84E3B003A3252 /* UITouch.h */; };
-		077442E71AE84E3B003A3252 /* UITraitCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441C91AE84E3B003A3252 /* UITraitCollection.h */; };
-		077442E91AE84E3B003A3252 /* UIUserNotificationSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441CB1AE84E3B003A3252 /* UIUserNotificationSettings.h */; };
-		077442EB1AE84E3B003A3252 /* UIVideoEditorController.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441CD1AE84E3B003A3252 /* UIVideoEditorController.h */; };
-		077442ED1AE84E3B003A3252 /* UIView.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441CF1AE84E3B003A3252 /* UIView.h */; };
-		077442EF1AE84E3B003A3252 /* UIViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441D11AE84E3B003A3252 /* UIViewController.h */; };
-		077442F11AE84E3B003A3252 /* UIViewControllerTransitionCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441D31AE84E3B003A3252 /* UIViewControllerTransitionCoordinator.h */; };
-		077442F31AE84E3B003A3252 /* UIViewControllerTransitioning.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441D51AE84E3B003A3252 /* UIViewControllerTransitioning.h */; };
-		077442F51AE84E3B003A3252 /* UIVisualEffectView.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441D71AE84E3B003A3252 /* UIVisualEffectView.h */; };
-		077442F71AE84E3B003A3252 /* UIWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441D91AE84E3B003A3252 /* UIWebView.h */; };
-		077442F91AE84E3B003A3252 /* UIWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441DB1AE84E3B003A3252 /* UIWindow.h */; };
+		077440A81AE84DBB003A3252 /* UIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440A71AE84DBB003A3252 /* UIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077441DD1AE84E3B003A3252 /* NSAttributedString.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440BF1AE84E3A003A3252 /* NSAttributedString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077441DF1AE84E3B003A3252 /* NSFileProviderExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440C11AE84E3A003A3252 /* NSFileProviderExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077441E11AE84E3B003A3252 /* NSLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440C31AE84E3A003A3252 /* NSLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077441E31AE84E3B003A3252 /* NSLayoutManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440C51AE84E3A003A3252 /* NSLayoutManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077441E51AE84E3B003A3252 /* NSParagraphStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440C71AE84E3A003A3252 /* NSParagraphStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077441E71AE84E3B003A3252 /* NSShadow.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440C91AE84E3A003A3252 /* NSShadow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077441E91AE84E3B003A3252 /* NSStringDrawing.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440CB1AE84E3A003A3252 /* NSStringDrawing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077441EB1AE84E3B003A3252 /* NSText.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440CD1AE84E3A003A3252 /* NSText.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077441ED1AE84E3B003A3252 /* NSTextAttachment.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440CF1AE84E3A003A3252 /* NSTextAttachment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077441EF1AE84E3B003A3252 /* NSTextContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440D11AE84E3A003A3252 /* NSTextContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077441F11AE84E3B003A3252 /* NSTextStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440D31AE84E3A003A3252 /* NSTextStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077441F31AE84E3B003A3252 /* UIAccelerometer.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440D51AE84E3A003A3252 /* UIAccelerometer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077441F51AE84E3B003A3252 /* UIAccessibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440D71AE84E3A003A3252 /* UIAccessibility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077441F71AE84E3B003A3252 /* UIActionSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440D91AE84E3A003A3252 /* UIActionSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077441F91AE84E3B003A3252 /* UIActivity.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440DB1AE84E3A003A3252 /* UIActivity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077441FB1AE84E3B003A3252 /* UIActivityIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440DD1AE84E3A003A3252 /* UIActivityIndicatorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077441FD1AE84E3B003A3252 /* UIActivityItemProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440DF1AE84E3A003A3252 /* UIActivityItemProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077441FF1AE84E3B003A3252 /* UIActivityViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440E11AE84E3A003A3252 /* UIActivityViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442011AE84E3B003A3252 /* UIAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440E31AE84E3A003A3252 /* UIAlertController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442031AE84E3B003A3252 /* UIAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440E51AE84E3A003A3252 /* UIAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442051AE84E3B003A3252 /* UIAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440E71AE84E3A003A3252 /* UIAppearance.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442071AE84E3B003A3252 /* UIApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440E91AE84E3A003A3252 /* UIApplication.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442091AE84E3B003A3252 /* UIAttachmentBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440EB1AE84E3A003A3252 /* UIAttachmentBehavior.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0774420B1AE84E3B003A3252 /* UIBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440ED1AE84E3A003A3252 /* UIBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0774420D1AE84E3B003A3252 /* UIBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440EF1AE84E3A003A3252 /* UIBarItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442101AE84E3B003A3252 /* UIBezierPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440F21AE84E3A003A3252 /* UIBezierPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442111AE84E3B003A3252 /* UIButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440F31AE84E3A003A3252 /* UIButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442131AE84E3B003A3252 /* UICollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440F51AE84E3A003A3252 /* UICollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442151AE84E3B003A3252 /* UICollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440F71AE84E3A003A3252 /* UICollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442171AE84E3B003A3252 /* UICollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440F91AE84E3A003A3252 /* UICollectionViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442191AE84E3B003A3252 /* UICollectionViewFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440FB1AE84E3A003A3252 /* UICollectionViewFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0774421B1AE84E3B003A3252 /* UICollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440FD1AE84E3A003A3252 /* UICollectionViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0774421D1AE84E3B003A3252 /* UICollectionViewTransitionLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 077440FF1AE84E3A003A3252 /* UICollectionViewTransitionLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0774421F1AE84E3B003A3252 /* UICollisionBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441011AE84E3A003A3252 /* UICollisionBehavior.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442211AE84E3B003A3252 /* UIColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441031AE84E3A003A3252 /* UIColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442231AE84E3B003A3252 /* UIControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441051AE84E3A003A3252 /* UIControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442251AE84E3B003A3252 /* UIDataDetectors.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441071AE84E3A003A3252 /* UIDataDetectors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442271AE84E3B003A3252 /* UIDatePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441091AE84E3A003A3252 /* UIDatePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442291AE84E3B003A3252 /* UIDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774410B1AE84E3A003A3252 /* UIDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0774422B1AE84E3B003A3252 /* UIDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774410D1AE84E3A003A3252 /* UIDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0774422D1AE84E3B003A3252 /* UIDocumentInteractionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774410F1AE84E3A003A3252 /* UIDocumentInteractionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0774422F1AE84E3B003A3252 /* UIDocumentMenuViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441111AE84E3A003A3252 /* UIDocumentMenuViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442311AE84E3B003A3252 /* UIDocumentPickerExtensionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441131AE84E3A003A3252 /* UIDocumentPickerExtensionViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442331AE84E3B003A3252 /* UIDocumentPickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441151AE84E3A003A3252 /* UIDocumentPickerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442351AE84E3B003A3252 /* UIDynamicAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441171AE84E3A003A3252 /* UIDynamicAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442371AE84E3B003A3252 /* UIDynamicBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441191AE84E3A003A3252 /* UIDynamicBehavior.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442391AE84E3B003A3252 /* UIDynamicItemBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774411B1AE84E3A003A3252 /* UIDynamicItemBehavior.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0774423B1AE84E3B003A3252 /* UIEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774411D1AE84E3B003A3252 /* UIEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0774423D1AE84E3B003A3252 /* UIFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774411F1AE84E3B003A3252 /* UIFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0774423F1AE84E3B003A3252 /* UIFontDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441211AE84E3B003A3252 /* UIFontDescriptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442411AE84E3B003A3252 /* UIGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441231AE84E3B003A3252 /* UIGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442431AE84E3B003A3252 /* UIGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441251AE84E3B003A3252 /* UIGestureRecognizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442451AE84E3B003A3252 /* UIGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441271AE84E3B003A3252 /* UIGraphics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442471AE84E3B003A3252 /* UIGravityBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441291AE84E3B003A3252 /* UIGravityBehavior.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442491AE84E3B003A3252 /* UIImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774412B1AE84E3B003A3252 /* UIImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0774424B1AE84E3B003A3252 /* UIImageAsset.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774412D1AE84E3B003A3252 /* UIImageAsset.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0774424D1AE84E3B003A3252 /* UIImagePickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774412F1AE84E3B003A3252 /* UIImagePickerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0774424F1AE84E3B003A3252 /* UIImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441311AE84E3B003A3252 /* UIImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442511AE84E3B003A3252 /* UIInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441331AE84E3B003A3252 /* UIInputView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442531AE84E3B003A3252 /* UIInputViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441351AE84E3B003A3252 /* UIInputViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442551AE84E3B003A3252 /* UIInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441371AE84E3B003A3252 /* UIInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442571AE84E3B003A3252 /* UIKitDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441391AE84E3B003A3252 /* UIKitDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442591AE84E3B003A3252 /* UILabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774413B1AE84E3B003A3252 /* UILabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0774425B1AE84E3B003A3252 /* UILexicon.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774413D1AE84E3B003A3252 /* UILexicon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0774425D1AE84E3B003A3252 /* UILocalizedIndexedCollation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774413F1AE84E3B003A3252 /* UILocalizedIndexedCollation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0774425F1AE84E3B003A3252 /* UILocalNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441411AE84E3B003A3252 /* UILocalNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442611AE84E3B003A3252 /* UILongPressGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441431AE84E3B003A3252 /* UILongPressGestureRecognizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442631AE84E3B003A3252 /* UIManagedDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441451AE84E3B003A3252 /* UIManagedDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442651AE84E3B003A3252 /* UIMenuController.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441471AE84E3B003A3252 /* UIMenuController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442671AE84E3B003A3252 /* UIMotionEffect.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441491AE84E3B003A3252 /* UIMotionEffect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442691AE84E3B003A3252 /* UINavigationBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774414B1AE84E3B003A3252 /* UINavigationBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0774426B1AE84E3B003A3252 /* UINavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774414D1AE84E3B003A3252 /* UINavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0774426D1AE84E3B003A3252 /* UINib.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774414F1AE84E3B003A3252 /* UINib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0774426F1AE84E3B003A3252 /* UINibDeclarations.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441511AE84E3B003A3252 /* UINibDeclarations.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442711AE84E3B003A3252 /* UINibLoading.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441531AE84E3B003A3252 /* UINibLoading.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442731AE84E3B003A3252 /* UIPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441551AE84E3B003A3252 /* UIPageControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442751AE84E3B003A3252 /* UIPageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441571AE84E3B003A3252 /* UIPageViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442771AE84E3B003A3252 /* UIPanGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441591AE84E3B003A3252 /* UIPanGestureRecognizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442791AE84E3B003A3252 /* UIPasteboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774415B1AE84E3B003A3252 /* UIPasteboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0774427B1AE84E3B003A3252 /* UIPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774415D1AE84E3B003A3252 /* UIPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0774427D1AE84E3B003A3252 /* UIPinchGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774415F1AE84E3B003A3252 /* UIPinchGestureRecognizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0774427F1AE84E3B003A3252 /* UIPopoverBackgroundView.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441611AE84E3B003A3252 /* UIPopoverBackgroundView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442811AE84E3B003A3252 /* UIPopoverController.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441631AE84E3B003A3252 /* UIPopoverController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442831AE84E3B003A3252 /* UIPopoverPresentationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441651AE84E3B003A3252 /* UIPopoverPresentationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442851AE84E3B003A3252 /* UIPresentationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441671AE84E3B003A3252 /* UIPresentationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442871AE84E3B003A3252 /* UIPrinter.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441691AE84E3B003A3252 /* UIPrinter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442891AE84E3B003A3252 /* UIPrinterPickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774416B1AE84E3B003A3252 /* UIPrinterPickerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0774428B1AE84E3B003A3252 /* UIPrintError.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774416D1AE84E3B003A3252 /* UIPrintError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0774428D1AE84E3B003A3252 /* UIPrintFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774416F1AE84E3B003A3252 /* UIPrintFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0774428F1AE84E3B003A3252 /* UIPrintInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441711AE84E3B003A3252 /* UIPrintInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442911AE84E3B003A3252 /* UIPrintInteractionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441731AE84E3B003A3252 /* UIPrintInteractionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442931AE84E3B003A3252 /* UIPrintPageRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441751AE84E3B003A3252 /* UIPrintPageRenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442951AE84E3B003A3252 /* UIPrintPaper.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441771AE84E3B003A3252 /* UIPrintPaper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442971AE84E3B003A3252 /* UIProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441791AE84E3B003A3252 /* UIProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442991AE84E3B003A3252 /* UIPushBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774417B1AE84E3B003A3252 /* UIPushBehavior.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0774429B1AE84E3B003A3252 /* UIReferenceLibraryViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774417D1AE84E3B003A3252 /* UIReferenceLibraryViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0774429D1AE84E3B003A3252 /* UIRefreshControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774417F1AE84E3B003A3252 /* UIRefreshControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0774429F1AE84E3B003A3252 /* UIResponder.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441811AE84E3B003A3252 /* UIResponder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442A11AE84E3B003A3252 /* UIRotationGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441831AE84E3B003A3252 /* UIRotationGestureRecognizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442A31AE84E3B003A3252 /* UIScreen.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441851AE84E3B003A3252 /* UIScreen.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442A51AE84E3B003A3252 /* UIScreenEdgePanGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441871AE84E3B003A3252 /* UIScreenEdgePanGestureRecognizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442A71AE84E3B003A3252 /* UIScreenMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441891AE84E3B003A3252 /* UIScreenMode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442A91AE84E3B003A3252 /* UIScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774418B1AE84E3B003A3252 /* UIScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442AB1AE84E3B003A3252 /* UISearchBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774418D1AE84E3B003A3252 /* UISearchBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442AD1AE84E3B003A3252 /* UISearchController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774418F1AE84E3B003A3252 /* UISearchController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442AF1AE84E3B003A3252 /* UISearchDisplayController.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441911AE84E3B003A3252 /* UISearchDisplayController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442B11AE84E3B003A3252 /* UISegmentedControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441931AE84E3B003A3252 /* UISegmentedControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442B31AE84E3B003A3252 /* UISlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441951AE84E3B003A3252 /* UISlider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442B51AE84E3B003A3252 /* UISnapBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441971AE84E3B003A3252 /* UISnapBehavior.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442B71AE84E3B003A3252 /* UISplitViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441991AE84E3B003A3252 /* UISplitViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442B91AE84E3B003A3252 /* UIStateRestoration.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774419B1AE84E3B003A3252 /* UIStateRestoration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442BB1AE84E3B003A3252 /* UIStepper.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774419D1AE84E3B003A3252 /* UIStepper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442BD1AE84E3B003A3252 /* UIStoryboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774419F1AE84E3B003A3252 /* UIStoryboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442BF1AE84E3B003A3252 /* UIStoryboardPopoverSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441A11AE84E3B003A3252 /* UIStoryboardPopoverSegue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442C11AE84E3B003A3252 /* UIStoryboardSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441A31AE84E3B003A3252 /* UIStoryboardSegue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442C31AE84E3B003A3252 /* UIStringDrawing.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441A51AE84E3B003A3252 /* UIStringDrawing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442C51AE84E3B003A3252 /* UISwipeGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441A71AE84E3B003A3252 /* UISwipeGestureRecognizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442C81AE84E3B003A3252 /* UISwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441AA1AE84E3B003A3252 /* UISwitch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442C91AE84E3B003A3252 /* UITabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441AB1AE84E3B003A3252 /* UITabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442CB1AE84E3B003A3252 /* UITabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441AD1AE84E3B003A3252 /* UITabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442CD1AE84E3B003A3252 /* UITabBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441AF1AE84E3B003A3252 /* UITabBarItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442CF1AE84E3B003A3252 /* UITableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441B11AE84E3B003A3252 /* UITableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442D11AE84E3B003A3252 /* UITableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441B31AE84E3B003A3252 /* UITableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442D31AE84E3B003A3252 /* UITableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441B51AE84E3B003A3252 /* UITableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442D51AE84E3B003A3252 /* UITableViewHeaderFooterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441B71AE84E3B003A3252 /* UITableViewHeaderFooterView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442D71AE84E3B003A3252 /* UITapGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441B91AE84E3B003A3252 /* UITapGestureRecognizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442D91AE84E3B003A3252 /* UITextChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441BB1AE84E3B003A3252 /* UITextChecker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442DB1AE84E3B003A3252 /* UITextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441BD1AE84E3B003A3252 /* UITextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442DD1AE84E3B003A3252 /* UITextInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441BF1AE84E3B003A3252 /* UITextInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442DF1AE84E3B003A3252 /* UITextInputTraits.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441C11AE84E3B003A3252 /* UITextInputTraits.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442E11AE84E3B003A3252 /* UITextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441C31AE84E3B003A3252 /* UITextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442E31AE84E3B003A3252 /* UIToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441C51AE84E3B003A3252 /* UIToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442E61AE84E3B003A3252 /* UITouch.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441C81AE84E3B003A3252 /* UITouch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442E71AE84E3B003A3252 /* UITraitCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441C91AE84E3B003A3252 /* UITraitCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442E91AE84E3B003A3252 /* UIUserNotificationSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441CB1AE84E3B003A3252 /* UIUserNotificationSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442EB1AE84E3B003A3252 /* UIVideoEditorController.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441CD1AE84E3B003A3252 /* UIVideoEditorController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442ED1AE84E3B003A3252 /* UIView.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441CF1AE84E3B003A3252 /* UIView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442EF1AE84E3B003A3252 /* UIViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441D11AE84E3B003A3252 /* UIViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442F11AE84E3B003A3252 /* UIViewControllerTransitionCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441D31AE84E3B003A3252 /* UIViewControllerTransitionCoordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442F31AE84E3B003A3252 /* UIViewControllerTransitioning.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441D51AE84E3B003A3252 /* UIViewControllerTransitioning.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442F51AE84E3B003A3252 /* UIVisualEffectView.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441D71AE84E3B003A3252 /* UIVisualEffectView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442F71AE84E3B003A3252 /* UIWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441D91AE84E3B003A3252 /* UIWebView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077442F91AE84E3B003A3252 /* UIWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 077441DB1AE84E3B003A3252 /* UIWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0774431A1AE85533003A3252 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077443191AE85533003A3252 /* Foundation.framework */; };
-		0774431C1AE85BF6003A3252 /* UIAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774431B1AE85BF6003A3252 /* UIAlert.h */; };
+		0774431C1AE85BF6003A3252 /* UIAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = 0774431B1AE85BF6003A3252 /* UIAlert.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0774431F1AE86DAD003A3252 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0774431E1AE86DAD003A3252 /* CoreGraphics.framework */; };
-		077443211AE93B58003A3252 /* UIBarCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 077443201AE93B58003A3252 /* UIBarCommon.h */; };
+		077443211AE93B58003A3252 /* UIBarCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 077443201AE93B58003A3252 /* UIBarCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		077443221AE93E31003A3252 /* NSAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 077440C01AE84E3A003A3252 /* NSAttributedString.m */; };
 		077443231AE93E31003A3252 /* NSFileProviderExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 077440C21AE84E3A003A3252 /* NSFileProviderExtension.m */; };
 		077443241AE93E31003A3252 /* NSLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 077440C41AE84E3A003A3252 /* NSLayoutConstraint.m */; };
@@ -297,20 +297,20 @@
 		077443AD1AE93E33003A3252 /* UIVisualEffectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 077441D81AE84E3B003A3252 /* UIVisualEffectView.m */; };
 		077443AE1AE93E33003A3252 /* UIWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 077441DA1AE84E3B003A3252 /* UIWebView.m */; };
 		077443AF1AE93E33003A3252 /* UIWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 077441DC1AE84E3B003A3252 /* UIWindow.m */; };
-		077443B11AE93FE0003A3252 /* UIAccessibilityAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 077443B01AE93FE0003A3252 /* UIAccessibilityAdditions.h */; };
-		077443B31AE94008003A3252 /* UIAccessibilityConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 077443B21AE94008003A3252 /* UIAccessibilityConstants.h */; };
-		077443B81AE9402C003A3252 /* UIAccessibilityCustomAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 077443B41AE9402C003A3252 /* UIAccessibilityCustomAction.h */; };
-		077443B91AE9402C003A3252 /* UIAccessibilityElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 077443B51AE9402C003A3252 /* UIAccessibilityElement.h */; };
-		077443BA1AE9402C003A3252 /* UIAccessibilityIdentification.h in Headers */ = {isa = PBXBuildFile; fileRef = 077443B61AE9402C003A3252 /* UIAccessibilityIdentification.h */; };
-		077443BB1AE9402C003A3252 /* UIAccessibilityZoom.h in Headers */ = {isa = PBXBuildFile; fileRef = 077443B71AE9402C003A3252 /* UIAccessibilityZoom.h */; };
-		077443BD1AE94B74003A3252 /* UIGuidedAccessRestrictions.h in Headers */ = {isa = PBXBuildFile; fileRef = 077443BC1AE94B74003A3252 /* UIGuidedAccessRestrictions.h */; };
-		077443BF1AE94D90003A3252 /* UIPopoverSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 077443BE1AE94D90003A3252 /* UIPopoverSupport.h */; };
+		077443B11AE93FE0003A3252 /* UIAccessibilityAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 077443B01AE93FE0003A3252 /* UIAccessibilityAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077443B31AE94008003A3252 /* UIAccessibilityConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 077443B21AE94008003A3252 /* UIAccessibilityConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077443B81AE9402C003A3252 /* UIAccessibilityCustomAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 077443B41AE9402C003A3252 /* UIAccessibilityCustomAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077443B91AE9402C003A3252 /* UIAccessibilityElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 077443B51AE9402C003A3252 /* UIAccessibilityElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077443BA1AE9402C003A3252 /* UIAccessibilityIdentification.h in Headers */ = {isa = PBXBuildFile; fileRef = 077443B61AE9402C003A3252 /* UIAccessibilityIdentification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077443BB1AE9402C003A3252 /* UIAccessibilityZoom.h in Headers */ = {isa = PBXBuildFile; fileRef = 077443B71AE9402C003A3252 /* UIAccessibilityZoom.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077443BD1AE94B74003A3252 /* UIGuidedAccessRestrictions.h in Headers */ = {isa = PBXBuildFile; fileRef = 077443BC1AE94B74003A3252 /* UIGuidedAccessRestrictions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077443BF1AE94D90003A3252 /* UIPopoverSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 077443BE1AE94D90003A3252 /* UIPopoverSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		077440A21AE84DBB003A3252 /* FakeUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FakeUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		077440A21AE84DBB003A3252 /* FakeUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FakeUIKit.framework; path = UIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		077440A61AE84DBB003A3252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = FakeUIKit/Info.plist; sourceTree = "<group>"; };
-		077440A71AE84DBB003A3252 /* FakeUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FakeUIKit.h; sourceTree = "<group>"; };
+		077440A71AE84DBB003A3252 /* UIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIKit.h; sourceTree = "<group>"; };
 		077440BF1AE84E3A003A3252 /* NSAttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSAttributedString.h; path = Classes/NSAttributedString.h; sourceTree = "<group>"; };
 		077440C01AE84E3A003A3252 /* NSAttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSAttributedString.m; path = Classes/NSAttributedString.m; sourceTree = "<group>"; };
 		077440C11AE84E3A003A3252 /* NSFileProviderExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSFileProviderExtension.h; path = Classes/NSFileProviderExtension.h; sourceTree = "<group>"; };
@@ -647,7 +647,7 @@
 			isa = PBXGroup;
 			children = (
 				077440BE1AE84E1E003A3252 /* Classes */,
-				077440A71AE84DBB003A3252 /* FakeUIKit.h */,
+				077440A71AE84DBB003A3252 /* UIKit.h */,
 			);
 			name = Source;
 			path = FakeUIKit;
@@ -1094,7 +1094,7 @@
 				077442A31AE84E3B003A3252 /* UIScreen.h in Headers */,
 				077442551AE84E3B003A3252 /* UIInterface.h in Headers */,
 				077442D71AE84E3B003A3252 /* UITapGestureRecognizer.h in Headers */,
-				077440A81AE84DBB003A3252 /* FakeUIKit.h in Headers */,
+				077440A81AE84DBB003A3252 /* UIKit.h in Headers */,
 				077442E91AE84E3B003A3252 /* UIUserNotificationSettings.h in Headers */,
 				077442DF1AE84E3B003A3252 /* UITextInputTraits.h in Headers */,
 				077442BB1AE84E3B003A3252 /* UIStepper.h in Headers */,
@@ -1131,9 +1131,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		077440A11AE84DBB003A3252 /* FakeUIKit */ = {
+		077440A11AE84DBB003A3252 /* UIKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 077440B81AE84DBB003A3252 /* Build configuration list for PBXNativeTarget "FakeUIKit" */;
+			buildConfigurationList = 077440B81AE84DBB003A3252 /* Build configuration list for PBXNativeTarget "UIKit" */;
 			buildPhases = (
 				0774409D1AE84DBB003A3252 /* Sources */,
 				0774409E1AE84DBB003A3252 /* Frameworks */,
@@ -1144,7 +1144,7 @@
 			);
 			dependencies = (
 			);
-			name = FakeUIKit;
+			name = UIKit;
 			productName = FakeUIKit;
 			productReference = 077440A21AE84DBB003A3252 /* FakeUIKit.framework */;
 			productType = "com.apple.product-type.framework";
@@ -1175,7 +1175,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				077440A11AE84DBB003A3252 /* FakeUIKit */,
+				077440A11AE84DBB003A3252 /* UIKit */,
 			);
 		};
 /* End PBXProject section */
@@ -1434,6 +1434,11 @@
 		077440B91AE84DBB003A3252 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+					x86_64,
+				);
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1450,6 +1455,11 @@
 		077440BA1AE84DBB003A3252 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+					x86_64,
+				);
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1475,7 +1485,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		077440B81AE84DBB003A3252 /* Build configuration list for PBXNativeTarget "FakeUIKit" */ = {
+		077440B81AE84DBB003A3252 /* Build configuration list for PBXNativeTarget "UIKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				077440B91AE84DBB003A3252 /* Debug */,

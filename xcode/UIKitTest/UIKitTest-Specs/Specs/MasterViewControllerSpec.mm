@@ -1,4 +1,3 @@
-#import <Cedar/Cedar.h>
 #import "MasterViewController.h"
 
 using namespace Cedar::Matchers;

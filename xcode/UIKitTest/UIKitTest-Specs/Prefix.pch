@@ -1,2 +1,3 @@
 
-#import <FakeUIKit/UIKit.h>
+#import <Cedar/Cedar.h>
+#import <FakeUIKit/FakeUIKit.h>

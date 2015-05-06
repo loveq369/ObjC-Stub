@@ -1,0 +1,6 @@
+framework module FakeUIKit {
+  umbrella header "FakeUIKit.h"
+
+  export *
+  module * { export * }
+}
